@@ -1,6 +1,6 @@
 ---
 name: marketing
-description: "Marketing strategy and planning for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user asks how to get more leads or customers, which channels to use, for a marketing plan, content calendar, social media or content ideas, a referral program, a growth experiment, or wants to know why marketing is not bringing results."
+description: "Use whenever the user asks how to get more leads or customers, which channels to use, for a marketing plan, a referral program, a growth experiment, or wants to know why marketing is not bringing results. Works from the company's saved context. Organic social media (what to post, content calendar, captions, carousels, short-video scripts) belongs to `social-media`, and paid campaigns to `ads`."
 ---
 
 # Marketing

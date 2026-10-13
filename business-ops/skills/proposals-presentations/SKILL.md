@@ -1,6 +1,6 @@
 ---
 name: proposals-presentations
-description: "Builds commercial proposals, sales presentations, one-pagers and plan sheets for one of the user's own companies from that company's templates, catalog and brand, and maintains those templates. Use whenever the user asks for a proposal, a quote or budget document, a deck or slides for a prospect or a demo, an institutional presentation, a one-page summary to send, a plan or price sheet, or wants to create or update a template for any of these (e.g. \"write the proposal for this customer\", \"I need a presentation\", \"create a proposal template\")."
+description: "Use whenever the user asks for a commercial proposal, a quote or budget document, a deck or slides for a prospect or a demo, an institutional presentation, a one-page summary to send, a plan or price sheet, or wants to create or update a template for any of these (e.g. \"write the proposal for this customer\", \"I need a presentation\", \"create a proposal template\"). Builds the file from the company's templates, catalog and brand. Critique of a document that already exists belongs to `material-review`."
 ---
 
 # Proposals and presentations
@@ -22,7 +22,7 @@ A proposal assembled from scratch each time drifts: prices get copied from an ol
 3. **Check fit before writing.** A proposal needs a diagnosed situation and one plan to recommend. If the conversation did not get that far, tell the user what is missing and what to do first (the `sales` skill covers discovery).
 4. **Fill the blocks.** Fixed blocks keep the template wording. Catalog blocks copy price, capacity and inclusions from the catalog today. Variable blocks use the customer's own words and numbers.
 5. **Run the claim check** below on the finished text.
-6. **Build the file** in the format the template names, matching the look of the most recent reference original in the document library and the brand notes. Use the document skills available in the session for the format (`pptx` for decks, `docx` or `pdf` for proposals and one-pagers). Render and look at the result before presenting it: text that overflows or a missing logo is caught by looking, not by assuming.
+6. **Build the file** in the format the template names, matching the look of the most recent reference original in the document library and the brand notes. Use the document skills available in the session for the format (`pptx` for decks, `docx` or `pdf` for proposals and one-pagers). When none is installed, deliver the document as Markdown or HTML with the same blocks and say which skill would produce the final file. Render and look at the result before presenting it: text that overflows or a missing logo is caught by looking, not by assuming.
 7. **Save the draft** in the company's `deliverables/YYYY-MM-DD-topic/` folder and show it. When the user approves it as final, offer to save it to the matching folder of the document library with that library's naming pattern, and write only after the user agrees to that write.
 
 ## Claim check

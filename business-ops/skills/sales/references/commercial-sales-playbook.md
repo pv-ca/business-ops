@@ -1,5 +1,19 @@
 # Commercial Sales Playbook
 
+## Contents
+
+Sections are numbered through the whole file; search for the heading `## <number>.` to jump to one.
+
+- 1. Purpose
+- 2. Method selector
+- **Part I — Commercial foundations:** 3. Selling is a change decision; 4. Diagnose the system, not only the funnel symptom; 5. Evidence hierarchy in commercial work
+- **Part II — Demand-Side Sales:** 6. Purpose; 7. Struggling moment; 8. Causation rather than correlation; 9. Functional, emotional, and social motivations; 10. Forces of Progress; 11. Buyer timeline; 12. Big hire and little hires; 13. Demand-Side interview outputs
+- **Part III — Gap Selling:** 14. Purpose; 15. Current state; 16. Problem hierarchy; 17. Root cause; 18. Impact; 19. Future state; 20. Intrinsic motivation; 21. The gap; 22. Qualification and disqualification; 23. Gap Selling discovery flow; 24. Demonstration design; 25. Proposal design; 26. Price objections; 27. Deal review
+- **Part IV — Challenger:** 28. Purpose and activation conditions; 29. Teach, tailor, and take control; 30. Commercial Teaching conditions; 31. Purposeful choreography; 32. Challenger guardrails
+- **Part V — Customer-centric communication:** 33. Core interaction behavior; 34. Question design; 35. Listening and summarizing; 36. RRR written communication; 37. ACE meeting opening; 38. Meeting preparation; 39. Follow-up
+- **Part VI — Commercial ABM:** 40. Purpose; 41. ABM readiness; 42. Six ABM operating areas; 43. Target-account list; 44. Account tiers; 45. ABM pilot; 46. Account plan; 47. ABM metrics
+- **Part VII — Integrated commercial workflow:** 48. From market learning to revenue; 49. Commercial artifact standards; 50. Company-specific adaptation; 51. When to consult the original books; 52. Quality check
+
 ## 1. Purpose
 
 This file is the operating reference for commercial work involving:
@@ -1173,7 +1187,13 @@ Include:
 
 ---
 
-## 50. When to consult the original books
+## 50. Company-specific adaptation
+
+The user's own companies differ in model, buyer and stage, so this playbook stays general. When the company's folder in the context folder holds `method-adaptation.md`, read the part about this subject before recommending: it records how the method applies to that company (which methods fit its kind of sale, who takes part in the decision, which practices are too heavy for it). When there is no such file and the adaptation matters, work it out from the company's context file and offer to record it there.
+
+---
+
+## 51. When to consult the original books
 
 ### Consult *Gap Selling* when:
 
@@ -1213,7 +1233,7 @@ Include:
 
 ---
 
-## 51. Quality check
+## 52. Quality check
 
 Before finalizing commercial advice, verify that:
 

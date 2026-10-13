@@ -1,6 +1,6 @@
 ---
 name: sales
-description: "Sales work for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user wants to answer or approach a lead, prepare or review a sales conversation, discovery call, demo, proposal or follow-up, handle a price objection, qualify a lead or revive a stalled deal, in B2B or B2C, including chat and e-mail messages (e.g. \"reply to this lead\", \"write a discovery call script\", \"the customer said it is too expensive\")."
+description: "Use whenever the user wants to answer or approach a lead, prepare or review a sales conversation, discovery call, demo or follow-up, handle a price objection, qualify a lead or revive a stalled deal, in B2B or B2C, including chat and e-mail messages (e.g. \"reply to this lead\", \"write a discovery call script\", \"the customer said it is too expensive\"). Works from the company's saved context. The proposal or deck file belongs to `proposals-presentations`, and a neutral interview with no selling to `market-research`."
 ---
 
 # Sales
@@ -34,8 +34,8 @@ Sales to individuals or low-ticket sales use Demand-Side and commercial communic
 ## WhatsApp and e-mail conversations
 
 - Answer what the person asked first. Then ask at most one question, the one that defines the next step. A string of questions reads as an interrogation and people stop replying.
-- Keep it short and in the tone of the channel and the company (the context describes the tone). No feature lists.
-- Quote only prices the context confirms, alongside what the person wants to solve.
+- Keep it short and in the tone of the channel and the company (`brand/<company>/identity.md` records how the company sounds). No feature lists.
+- Quote only plans and prices of catalog entries with status available, copied from `catalog.md`, alongside what the person wants to solve.
 - End with a concrete request that is easy to accept (a time slot, a confirmation).
 - If the context folder has the company's own e-mail or message rules, follow them exactly.
 
@@ -45,7 +45,7 @@ When the company index names a lead register, look for this lead's file before a
 
 ## Objections
 
-Treat an objection as information about anxiety or habit, not as an obstacle to defeat. A price objection usually signals an incomplete diagnosis: return to the problem and its impact before talking about discount (section 26 of the playbook). Do not invent a discount, condition or guarantee the context does not confirm.
+Treat an objection as information about anxiety or habit, not as an obstacle to defeat. A price objection usually signals an incomplete diagnosis: return to the problem and its impact before talking about discount (section 26 of the playbook). Do not invent a discount, condition or guarantee the catalog does not record.
 
 ## Mistakes this skill prevents
 

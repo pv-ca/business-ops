@@ -4,7 +4,7 @@ Plugin for business work, for Claude Code and Codex from the same source. It str
 
 ## How it works
 
-1. The `business-context` skill keeps a context folder: `business-ops-context.md` (profile and index of companies) plus, per company, `context.md` (stable facts), `catalog.md` (plans, prices and features with status), `changelog.md` (changelog), `templates/` (templates), `processes/` (process library), `social/` (social media strategy, voice and calendar), and a brand folder `brand/<company>/`. In Claude Code, set the folder with `claude plugin configure business-ops@pvca` (option `context_folder`). Codex has no plugin settings, so there, and wherever the option is unset, the folder comes from the project instructions, then from the path written in `~/.config/business-ops/context-folder`, then from the working directory.
+1. The `business-context` skill keeps a context folder: `business-ops-context.md` (profile and index of companies) plus, per company, `context.md` (stable facts), `catalog.md` (plans, prices and features with status), `changelog.md` (changelog), `templates/` (templates), `processes/` (process library), `social/` (social media strategy, voice and calendar), and a brand folder `brand/<company>/`. The structure of each file is in `skills/business-context/references/context-formats.md`. In Claude Code, set the folder with `claude plugin configure business-ops@pvca` (option `context_folder`). Codex has no plugin settings, so there, and wherever the option is unset, the folder comes from the project instructions, then from the path written in `~/.config/business-ops/context-folder`, then from the working directory.
 2. Every skill reads the context of the company in question before acting and keeps companies separate.
 3. Every answer follows the coach protocol in `skills/business-context/references/coach-protocol.md`: confirmed facts only in customer-facing material, diagnosis before prescription, and the four-block deliverable (what to do, why, common mistake, next step).
 
@@ -45,7 +45,8 @@ Codex reads this folder as it is, through the same `.claude-plugin/` manifests, 
 
 - Skills name files by paths relative to the skill's folder. `${CLAUDE_PLUGIN_ROOT}` is replaced only by Claude Code and may appear only in `commands/`.
 - `${user_config.context_folder}` is replaced only by Claude Code. A skill that shows it must also say what to do when it is not replaced; the lookup order is in section 1 of the coach protocol.
-- Frontmatter uses `name` and `description` only, with the trigger wording at the start of the description, because Codex shortens long descriptions.
+- Frontmatter uses `name` and `description` only. The description starts with the trigger wording (`Use whenever...`), because Codex shortens long descriptions, and ends by naming the neighbouring skill for requests that look similar and belong elsewhere.
+- A skill refers to another skill by name when it hands a request over, and by relative path (`../<skill>/SKILL.md`) when it needs that skill's method read as part of its own work.
 
 ## Books
 
@@ -53,5 +54,12 @@ Most skills have a `references/books.md` that names the book behind each method.
 
 ## Optional companions
 
-- `hyperframes` plugin (HeyGen, Apache 2.0): required by `motion-video` to render.
-- `marketing-skills` plugin: detailed execution for marketing, ads and offers.
+Each skill that names a companion also says what to do without it.
+
+| Companion | Used by | Without it |
+| --- | --- | --- |
+| `hyperframes` plugin (HeyGen, Apache 2.0) | `motion-video`, to animate and render | The skill delivers script and scene plan and gives the install commands |
+| `ffmpeg-skill` | `motion-video`, for cuts, reframing, loudness and subtitles after the render | The skill gives the `ffmpeg` command or leaves the render as it is |
+| `marketing-skills` plugin | `marketing`, `social-media`, `ads`, `creators-partners`, `brand-offer`, `market-research`, for detailed execution | The skill does the work from its own references |
+| `pptx`, `docx`, `pdf` document skills | `proposals-presentations`, to build the final file | The document is delivered as Markdown or HTML |
+| `humanizer` skill | `social-media`, to review drafts | The skill rereads the draft against its own list |

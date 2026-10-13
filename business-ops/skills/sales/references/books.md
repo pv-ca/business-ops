@@ -1,6 +1,6 @@
 # Methods and books: sales
 
-The working file is `commercial-sales-playbook.md` in this folder. It restates the methods below in its own words. This plugin carries insights drawn from the books, in its own words, and does not include their text. Rely on the playbook and consult an original book only when the user asks for fidelity to a method or the playbook does not resolve an edge case (section 50 of the playbook). If the user's project keeps a library with the texts, the project instructions say where it is.
+The working file is `commercial-sales-playbook.md` in this folder. It restates the methods below in its own words. This plugin carries insights drawn from the books, in its own words, and does not include their text. Rely on the playbook and consult an original book only when the user asks for fidelity to a method or the playbook does not resolve an edge case (section 51 of the playbook). If the user's project keeps a library with the texts, the project instructions say where it is.
 
 | Method | Book | Use it to | Playbook |
 | --- | --- | --- | --- |

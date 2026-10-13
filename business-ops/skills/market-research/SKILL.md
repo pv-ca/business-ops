@@ -1,6 +1,6 @@
 ---
 name: market-research
-description: "Plans and analyzes market and customer research for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user wants to interview customers or leads, understand why people buy, stay or cancel, validate an ideal customer profile, segment, offer or price, write an interview script or survey, analyze interview notes, study competitors and alternatives, or size a market, before launching or repositioning."
+description: "Use whenever the user wants neutral customer or market research: interview customers or leads, understand why people buy, stay or cancel, validate an ideal customer profile, segment, offer or price, write an interview script or survey, analyze interview notes, study competitors and alternatives, or size a market, before launching or repositioning. Works from the company's saved context. Working a live deal belongs to `sales`, and trying to keep a customer who wants to leave to `customer-success`."
 ---
 
 # Market research

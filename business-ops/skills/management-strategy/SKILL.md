@@ -1,6 +1,6 @@
 ---
 name: management-strategy
-description: "Management and strategy for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user wants to set priorities or goals, write OKRs, make a quarterly or annual plan, decide between strategic options, organize meeting rhythm, define roles, hire, give feedback, or says they have too many things to do and do not know what to focus on."
+description: "Use whenever the user wants to set priorities or goals, write OKRs, make an annual plan, decide between strategic options, compare their companies as a portfolio, organize meeting rhythm, define roles, hire, give feedback, or says they have too many things to do and do not know what to focus on. Works from the company's saved context. A 90-day or quarterly plan broken down by week belongs to `quarterly-plan`."
 ---
 
 # Management and strategy

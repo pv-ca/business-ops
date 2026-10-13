@@ -1,6 +1,6 @@
 # Methods and books: recurring revenue
 
-The working file is `revenue-operations-and-scale-playbook.md` in this folder. This plugin carries insights drawn from the books, in its own words, and does not include their text. Rely on the playbook and consult an original book only when the user asks for fidelity to a method or the playbook does not resolve the case (section 54 of the playbook).
+The working file is `revenue-operations-and-scale-playbook.md` in this folder. This plugin carries insights drawn from the books, in its own words, and does not include their text. Rely on the playbook and consult an original book only when the user asks for fidelity to a method or the playbook does not resolve the case (section 53 of the playbook).
 
 | Book | Use it for | Playbook |
 | --- | --- | --- |

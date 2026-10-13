@@ -17,7 +17,7 @@
 
 [Início rápido](#início-rápido) · [Como funciona](#como-funciona) · [O que dá para fazer](#o-que-dá-para-fazer) · [Exemplos de pedidos](#exemplos-de-pedidos) · [Perguntas frequentes](#perguntas-frequentes) · [Documentação](#documentação)
 
-<code>claude plugin install business-ops@pvca</code>
+<code>claude plugin marketplace add pv-ca/business-ops &amp;&amp; claude plugin install business-ops@pvca</code>
 
 </div>
 
@@ -27,7 +27,7 @@ Precisa responder um lead, montar uma proposta, planejar o conteúdo do mês ou 
 
 O plugin reúne 21 skills para vendas, pós-venda, marketing, redes sociais, processos, finanças e gestão. No primeiro uso ele pergunta sobre você e sobre o que a empresa vende, e guarda as respostas em arquivos Markdown numa pasta do seu computador. Quem tem mais de uma empresa mantém uma pasta para cada, e o plugin não leva preço, cliente ou prática de uma para a outra.
 
-O material que vai para o seu cliente usa apenas o que você confirmou. Cada informação da empresa é marcada como confirmada, planejada ou hipótese, e planos e preços vêm de um catálogo com status.
+O material que vai para o seu cliente usa apenas o que você confirmou. Cada informação da empresa recebe um de cinco status (confirmada, representada, planejada, hipótese ou desconhecida), e planos e preços vêm de um catálogo que registra se cada um está disponível.
 
 > O plugin ainda é um rascunho em uso pelo autor, e este repositório é privado.
 
@@ -136,7 +136,13 @@ Quando você conta algo novo, como um lançamento ou uma mudança de preço, a s
 | Aprender | Miniaula de um conceito com exemplo da sua empresa e um exercício | `teach` |
 | Revisão | Crítica de um material, trechos reescritos e conferência das afirmações com o contexto | `material-review` |
 
-No Claude Code há ainda quatro atalhos que só encaminham para uma skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` e `/business-ops:process`. O Codex não carrega comandos de plugin, então lá você chama a skill correspondente.
+No Claude Code há ainda quatro atalhos que só encaminham para uma skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` e `/business-ops:process`. O Codex não carrega comandos de plugin, então lá você chama a skill correspondente:
+
+| Atalho no Claude Code | Skill no Codex |
+| --- | --- |
+| `/business-ops:context` | `$business-context` |
+| `/business-ops:proposal`, `/business-ops:presentation` | `$proposals-presentations` |
+| `/business-ops:process` | `$processes-docs` |
 
 ## Exemplos de pedidos
 
@@ -146,7 +152,23 @@ No Claude Code há ainda quatro atalhos que só encaminham para uma skill: `/bus
 O cliente mandou mensagem dizendo que quer cancelar. O que eu respondo?
 ```
 
-A skill `customer-success` lê o contexto da empresa, pergunta o que falta saber sobre o caso e entrega a resposta pronta para enviar. Junto vem o motivo da abordagem, o erro mais comum nesse tipo de conversa e o que observar depois.
+A skill `customer-success` lê o contexto da empresa, pergunta o que falta saber sobre o caso e entrega a resposta pronta para enviar. Junto vem o motivo da abordagem, o erro mais comum nesse tipo de conversa e o que observar depois. A resposta tem este formato:
+
+```text
+O que fazer
+  Responda hoje e pergunte o que mudou antes de oferecer qualquer coisa. [mensagem pronta para copiar]
+
+Por quê
+  O motivo dito no cancelamento raramente é a causa. Sem saber a causa,
+  o desconto resolve o problema errado.
+
+Erro comum
+  Abrir com desconto. Isso ensina ao cliente que pedir para sair baixa o preço.
+
+Próximo passo
+  Envie a mensagem hoje. Se a causa for falta de valor percebido, marque 20 minutos
+  nesta semana para mostrar o que ele ainda não usou. Funcionou se ele contar o motivo real.
+```
 
 ### O conteúdo do mês
 
@@ -194,6 +216,7 @@ Na pasta de contexto, no seu computador, em arquivos Markdown que você pode abr
   <empresa>/processes/            procedimentos, políticas e manuais, com índice
   <empresa>/social/               estratégia, voz e calendário de redes sociais
   <empresa>/deliverables/         rascunhos, uma pasta por pedido
+  <empresa>/archive/              registros antigos, tirados dos arquivos que crescem
   brand/<empresa>/identity.md     cores, tipografia, uso do logo e tom
   brand/<empresa>/assets/         cópia local do logo e dos arquivos da marca
 ```
@@ -237,7 +260,7 @@ Para o que muda rápido, como regras de plataformas de anúncio e de redes socia
 
 Não. O plugin é feito só de instruções em Markdown, sem hooks, servidores MCP ou scripts.
 
-Dois plugins combinam com ele e são opcionais. A skill `motion-video` usa o `hyperframes`, da HeyGen, para animar e renderizar os vídeos. Quando o `marketing-skills`, de Corey Haines, está instalado, as skills de marketing e de redes sociais passam a ele a execução detalhada.
+Alguns plugins e skills combinam com ele e são opcionais. A skill `motion-video` usa o `hyperframes`, da HeyGen, para animar e renderizar os vídeos, e a `ffmpeg-skill` para cortes e legendas depois da renderização. Quando o `marketing-skills`, de Corey Haines, está instalado, as skills de marketing e de redes sociais passam a ele a execução detalhada. A `proposals-presentations` usa as skills de documento `pptx`, `docx` e `pdf` para montar o arquivo final, e a `social-media` passa os rascunhos pela `humanizer`. Sem nenhum deles as skills continuam funcionando e avisam o que ficou de fora.
 
 </details>
 
@@ -252,6 +275,7 @@ Não. Em assuntos jurídicos, trabalhistas, tributários, de privacidade ou de s
 
 - [Notas técnicas do plugin](../../business-ops/README.md): estrutura, regras para manter as skills funcionando nos dois agentes e plugins que combinam. Em inglês.
 - [Protocolo comum](../../business-ops/skills/business-context/references/coach-protocol.md): como as skills encontram o contexto, o que pode ser afirmado e o formato da entrega.
+- [Formatos de contexto](../../business-ops/skills/business-context/references/context-formats.md): a estrutura de cada arquivo da pasta de contexto e do registro de um lead.
 - [Skill de contexto](../../business-ops/skills/business-context/SKILL.md): a conversa de entrada e o que cada arquivo de empresa guarda.
 - [Histórico de versões](../../CHANGELOG.md).
 
@@ -263,6 +287,7 @@ business-ops/                     o plugin
   .claude-plugin/plugin.json      manifesto e versão
   skills/<nome>/SKILL.md          uma pasta por skill, com suas referências
   commands/                       atalhos do Claude Code
+docs/readme/                      este README em outros idiomas
 CHANGELOG.md
 ```
 

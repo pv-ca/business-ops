@@ -1,6 +1,6 @@
 ---
 name: ads
-description: "Paid advertising and direct-response copy for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user wants to create, structure or review ad campaigns on Meta, Google, TikTok, YouTube or LinkedIn, write ad copy or creative briefs, plan creative tests, set a budget, or read campaign results (CPM, CTR, CPC, CPA, ROAS) and decide what to do next."
+description: "Use whenever the user wants to create, structure or review paid ad campaigns on Meta, Google, TikTok, YouTube or LinkedIn, write ad copy or creative briefs, plan creative tests, set an ad budget, or read campaign results (CPM, CTR, CPC, CPA, ROAS) and decide what to do next. Works from the company's saved context. Organic posts belong to `social-media`."
 ---
 
 # Ads

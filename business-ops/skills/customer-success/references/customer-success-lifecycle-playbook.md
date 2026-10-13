@@ -1,5 +1,25 @@
 # Customer Success Lifecycle Playbook
 
+## Contents
+
+Sections are numbered through the whole file; search for the heading `## <number>.` to jump to one.
+
+- 1. Purpose
+- 2. Definition
+- 3. Lifecycle principle
+- 4. Big hire and little hires
+- 5. Customer outcome model
+- **Part I — Before onboarding:** 6. Pre-sale alignment; 7. Customer fit; 8. Sales-to-CS handoff
+- **Part II — Segmentation and service model:** 9. Customer segmentation; 10. Service models
+- **Part III — Onboarding and implementation:** 11. Onboarding purpose; 12. Distinguish lifecycle milestones; 13. Onboarding design; 14. Implementation risk; 15. Activation; 16. Time to value
+- **Part IV — Adoption and value:** 17. Adoption; 18. Customer education; 19. Value realization; 20. Value recognition; 21. Success planning
+- **Part V — Engagement, health, and risk:** 22. Engagement cadence; 23. Customer health; 24. Risk response; 25. Support patterns
+- **Part VI — Retention, renewal, and expansion:** 26. Retention; 27. Renewal; 28. Expansion; 29. Advocacy and referrals
+- **Part VII — Churn:** 30. Churn classification; 31. Churn diagnosis; 32. Churn reduction; 33. Save conversations
+- **Part VIII — Voice of Customer and operations:** 34. Voice of Customer; 35. Closing the feedback loop; 36. Customer Success Operations; 37. Capacity planning
+- **Part IX — Metrics:** 38. Metric design; 39. Potential recurring-revenue metrics; 40. Basic retention formulas; 41. B2C service and education metrics
+- **Part X — Company-specific adaptation:** 42. Reading the company's own adaptation; 43. Playbook templates; 44. When to consult original sources; 45. Quality check
+
 ## 1. Purpose
 
 This file is the operating reference for:
@@ -1132,7 +1152,7 @@ The user's own companies differ in model, buyer and stage, so this playbook stay
 
 ---
 
-## 44. Playbook templates
+## 43. Playbook templates
 
 ### Handoff template
 
@@ -1205,7 +1225,7 @@ The user's own companies differ in model, buyer and stage, so this playbook stay
 
 ---
 
-## 45. When to consult original sources
+## 44. When to consult original sources
 
 Consult *Demand-Side Sales 101* when:
 
@@ -1230,7 +1250,7 @@ Consult *Deploy Empathy* when:
 
 ---
 
-## 46. Quality check
+## 45. Quality check
 
 Before finalizing Customer Success advice, verify that:
 

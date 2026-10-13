@@ -1,6 +1,6 @@
 ---
 name: recurring-revenue
-description: "Designs and assesses the recurring-revenue system of one of the user's own companies (SaaS or subscription service), grounded in that company's saved context and delivered as coaching. Use whenever the user asks whether they are ready to scale, how to organize the funnel and customer lifecycle, which metrics to track (MRR, churn, CAC, payback), how to split sales and post-sale roles, how to set up pipeline, forecast or CRM, whether to hire for sales, or how to run an ABM pilot."
+description: "Use whenever the user asks about the recurring-revenue system of a SaaS or subscription business: whether they are ready to scale, how to organize the funnel and customer lifecycle, which metrics to track (MRR, churn, CAC, payback), how to split sales and post-sale roles, how to set up pipeline, forecast or CRM, whether to hire for sales, or how to run an ABM pilot. Works from the company's saved context. A single sales conversation or deal belongs to `sales`."
 ---
 
 # Recurring revenue
@@ -38,7 +38,7 @@ If the company context marks ideal customer, price or channel as a hypothesis or
 
 ## Typical deliverables
 
-Scale-readiness assessment, lifecycle map with owners, minimum metrics dashboard, role and handoff design, ABM pilot plan, scale plan (section 53 of the playbook).
+Scale-readiness assessment, lifecycle map with owners, minimum metrics dashboard, role and handoff design, ABM pilot plan, scale plan (section 52 of the playbook).
 
 ## Mistakes this skill prevents
 

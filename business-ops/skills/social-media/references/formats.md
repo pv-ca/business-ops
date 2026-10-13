@@ -109,7 +109,7 @@ Readers recognize these and scroll past. The examples are in English, but each p
 - Inflated words: revolutionize, transform, unlock, empower, journey, "in today's world".
 - Dashes used as dramatic pauses.
 
-When the `humanizer` skill is available, run the draft through it.
+When the `humanizer` skill is available, run the draft through it. Without it, reread the draft against the list above before delivering.
 
 ## Check before delivering
 

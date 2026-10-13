@@ -1,6 +1,6 @@
 ---
 name: creators-partners
-description: "Creator, influencer, affiliate and partnership marketing for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user wants to choose creators or partners, write a briefing, proposal or outreach message, structure a referral or affiliate deal, a channel partnership (for example with accounting firms or other intermediaries), or measure the result of a campaign with creators."
+description: "Use whenever the user wants to choose creators, influencers, affiliates or channel partners (for example accounting firms or other intermediaries), write a creator briefing, a partnership proposal or an outreach message, structure a referral or affiliate deal, or measure the result of a campaign with creators or partners. Works from the company's saved context."
 ---
 
 # Creators and partners

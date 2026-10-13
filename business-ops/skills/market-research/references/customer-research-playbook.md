@@ -1,5 +1,25 @@
 # Customer Research Playbook
 
+## Contents
+
+Sections are numbered through the whole file; search for the heading `## <number>.` to jump to one.
+
+- 1. Purpose
+- 2. Research is not sales, support, or onboarding
+- 3. Research decision first
+- 4. Interviews or quantitative data
+- 5. Project-based and ongoing research
+- 6. Everything is a process
+- 7. Core evidence dimensions
+- 8. Participant selection
+- 9. Recruiting participants
+- 10. Interview preparation
+- 11. Interviewer behavior
+- 12. Ask about behavior, not hypothetical preference
+- 13. Avoid leading questions
+- **Part I — Interview guides:** 14. Problem-discovery interview; 15. Switching or new-customer interview; 16. Long-term customer interview; 17. Cancellation interview; 18. Interactive interview; 19. Prioritization interview; 20. Willingness-to-pay research; 21. Feature-request interview
+- **Part II — Analysis:** 22. Evidence capture; 23. Interview debrief; 24. Journey mapping; 25. Pain and frequency matrix; 26. Pattern analysis; 27. Analysis output; 28. Bias controls; 29. Research loops; 30. Company-specific adaptation; 31. When to consult the original source; 32. Research quality check
+
 ## 1. Purpose
 
 This file is the operating reference for qualitative customer research involving:

@@ -1,5 +1,22 @@
 # Revenue Operations and Scale Playbook
 
+## Contents
+
+Sections are numbered through the whole file; search for the heading `## <number>.` to jump to one.
+
+- 1. Purpose
+- **Part I — Scale readiness:** 2. Scale is not validation; 3. Scale-readiness assessment; 4. Scale decision
+- **Part II — Customer journey and Moments That Matter:** 5. Customer-centric journey; 6. Moment That Matters definition; 7. Awareness; 8. Education; 9. Selection; 10. Commit; 11. Onboarding; 12. Use and Expansion
+- **Part III — Segment economics and service tiers:** 13. Segment before structuring the organization; 14. Tier design; 15. Tier-level profitability
+- **Part IV — Unit economics:** 16. Revenue, cash, and profit; 17. Customer Acquisition Cost; 18. Customer retention cost; 19. Time to profitability; 20. Expansion economics
+- **Part V — Lifecycle and process governance:** 21. Lifecycle stages; 22. Handoffs; 23. Service-level expectations
+- **Part VI — Roles and organizational design:** 24. Role design principle; 25. Possible commercial and customer roles; 26. Founder-led sales; 27. Specialization risks; 28. Pod or team-unit design
+- **Part VII — Revenue Operations:** 29. RevOps purpose; 30. System of record; 31. Data quality; 32. Reporting design; 33. Funnel and lifecycle metrics; 34. Forecasting; 35. Capacity planning
+- **Part VIII — ABM operating system:** 36. ABM purpose; 37. ABM maturity; 38. ABM pilot team; 39. Target-account list governance; 40. ABM six-area model; 41. ABM engagement; 42. ABM conversion and closing; 43. ABM measurement; 44. ABM scaling
+- **Part IX — Technology and automation:** 45. Strategy before technology; 46. Technology gap assessment; 47. Automation policy
+- **Part X — Learning and enablement:** 48. Self-learning organization; 49. Enablement; 50. Experimentation
+- **Part XI — Company-specific adaptation:** 51. Reading the company's own adaptation; 52. Scale-plan output; 53. When to consult original sources; 54. Quality check
+
 ## 1. Purpose
 
 This file is the operating reference for:
@@ -1222,7 +1239,7 @@ The user's own companies differ in model, buyer and stage, so this playbook stay
 
 ---
 
-## 53. Scale-plan output
+## 52. Scale-plan output
 
 When asked for a scale plan, provide:
 
@@ -1242,7 +1259,7 @@ When asked for a scale plan, provide:
 
 ---
 
-## 54. When to consult original sources
+## 53. When to consult original sources
 
 Consult *Blueprints for a SaaS Sales Organization* when:
 
@@ -1269,7 +1286,7 @@ Treat historical benchmarks, named tools, generational claims, and old channel t
 
 ---
 
-## 55. Quality check
+## 54. Quality check
 
 Before finalizing RevOps or scale advice, verify that:
 

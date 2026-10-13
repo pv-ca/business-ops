@@ -1,6 +1,6 @@
 ---
 name: quarterly-plan
-description: "Builds a 90-day plan for one of the user's own companies: 3 to 5 measurable goals, tasks by week, owners, metrics and review rituals, sized to the stage of the business. Use whenever the user asks for a quarterly plan, a 90-day plan, goals for the next quarter or months, or a plan to reach a target by a date (e.g. \"build the plan for the quarter\", \"I want a 90-day plan\")."
+description: "Use whenever the user asks for a quarterly plan, a 90-day plan, goals for the next quarter or months, or a week-by-week plan to reach a target by a date (e.g. \"build the plan for the quarter\", \"I want a 90-day plan\"). Builds 3 to 5 measurable goals, tasks by week, owners, metrics and review rituals, sized to the stage of the business in its saved context."
 ---
 
 # Quarterly plan
@@ -17,4 +17,4 @@ Take the company from the user's request or the context index; ask if it is ambi
 2. Define 3 to 5 measurable goals, tasks by week, owners, metrics the company can actually observe, and the review rhythm.
 3. Say what is deliberately left out of the quarter, so the plan reads as a choice and not a wish list.
 
-Use the `management-strategy` skill for the method.
+The method is in `../management-strategy/SKILL.md`; read it before setting the goals.

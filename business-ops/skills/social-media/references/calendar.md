@@ -41,7 +41,7 @@ In order of value, because the first ones are in the audience's own words:
 
 ## The standing calendar
 
-`social/calendar.md` is one table that grows. Newest period on top.
+`social/calendar.md` is one table that grows. Newest period on top. To keep it readable on every run, it holds the current quarter and the one before it; when a new quarter starts, move older rows to `archive/calendar-YYYY-QN.md` in the company's folder, after their results have been used in a monthly review.
 
 | Date | Channel | Format | Pillar | Idea (one sentence) | Source | Status | Result |
 | --- | --- | --- | --- | --- | --- | --- | --- |

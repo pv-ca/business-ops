@@ -1,6 +1,6 @@
 ---
 name: motion-video
-description: "Plans and produces motion-graphics videos for one of the user's own companies, from script to rendered MP4, grounded in that company's saved context. Use whenever the user wants a product presentation or demo video, an explainer, an institutional or sales video, a short for social media, an animated piece with AI narration and no one on camera, or motion graphics synced to a recording (e.g. \"I want a video presenting the product\", \"make a motion video\", \"animate this explanation\")."
+description: "Use whenever the user wants a motion-graphics video planned and rendered to MP4: a product presentation or demo video, an explainer, an institutional or sales video, an animated short for social media with AI narration and no one on camera, or motion graphics synced to a recording (e.g. \"I want a video presenting the product\", \"make a motion video\", \"animate this explanation\"). Works from the company's saved context. A script for a video someone records on camera belongs to `social-media`."
 ---
 
 # Motion video
@@ -9,7 +9,7 @@ description: "Plans and produces motion-graphics videos for one of the user's ow
 
 Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company and what may be claimed. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
-A video is customer-facing material, so every sentence of narration and every on-screen claim passes the protocol's truth-status rule: confirmed facts only, no planned feature shown as available, no guaranteed result. For the message itself, use the `brand-offer` skill's promise test.
+A video is customer-facing material, so every sentence of narration and every on-screen claim passes the protocol's truth-status rule: confirmed facts only, no planned feature shown as available, no guaranteed result. For the message itself, apply "The promise test" in `../brand-offer/SKILL.md`.
 
 ## How the video gets made
 
@@ -36,7 +36,7 @@ Route the build through the HyperFrames skills instead of writing compositions f
 | Anything unclear | `hyperframes:hyperframes` (router) |
 | Voice, music, sound effects, captions | `hyperframes:media-use`, `hyperframes:hyperframes-audio` |
 
-For cuts, reframing to another aspect ratio, loudness and subtitles after the render, use the `ffmpeg-skill` skill when available.
+For cuts, reframing to another aspect ratio, loudness and subtitles after the render, use the `ffmpeg-skill` skill when available. Without it, give the user the `ffmpeg` command for the step, or leave the render as it is and say what was not done.
 
 ## Workflow
 

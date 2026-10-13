@@ -17,7 +17,7 @@
 
 [Quick start](#quick-start) · [How it works](#how-it-works) · [What you can do](#what-you-can-do) · [Example requests](#example-requests) · [FAQ](#faq) · [Documentation](#documentation)
 
-<code>claude plugin install business-ops@pvca</code>
+<code>claude plugin marketplace add pv-ca/business-ops &amp;&amp; claude plugin install business-ops@pvca</code>
 
 </div>
 
@@ -27,7 +27,7 @@ Need to answer a lead, write a proposal, plan next month's content, or find out 
 
 The plugin has 21 skills for sales, customer success, marketing, social media, processes, finance and management. On first use it asks about you and what the company sells, and saves the answers as Markdown files in a folder on your computer. If you run more than one company, each gets its own folder, and the plugin does not carry a price, a customer or a practice from one to another.
 
-Anything written for your customers uses only what you have confirmed. Each fact about the company is marked as confirmed, planned or hypothesis, and plans and prices come from a catalog that records their status.
+Anything written for your customers uses only what you have confirmed. Each fact about the company carries one of five statuses (confirmed, represented, planned, hypothesis or unknown), and plans and prices come from a catalog that records whether each one is available.
 
 > The plugin is a draft in use by its author, and this repository is private for now.
 
@@ -136,7 +136,13 @@ When you mention something new, such as a launch or a price change, the skill re
 | Learning | A mini-lesson on a concept with an example from your company and an exercise | `teach` |
 | Review | Critique of a piece of material, rewritten passages and a check of its claims against the context | `material-review` |
 
-Claude Code also has four shortcuts that only route to a skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` and `/business-ops:process`. Codex does not load plugin commands, so there you call the matching skill.
+Claude Code also has four shortcuts that only route to a skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` and `/business-ops:process`. Codex does not load plugin commands, so there you call the matching skill:
+
+| Claude Code shortcut | Skill in Codex |
+| --- | --- |
+| `/business-ops:context` | `$business-context` |
+| `/business-ops:proposal`, `/business-ops:presentation` | `$proposals-presentations` |
+| `/business-ops:process` | `$processes-docs` |
 
 ## Example requests
 
@@ -146,7 +152,23 @@ Claude Code also has four shortcuts that only route to a skill: `/business-ops:c
 The customer sent a message saying they want to cancel. What do I reply?
 ```
 
-The `customer-success` skill reads the company context, asks what it still needs to know about the case and hands you the reply ready to send. With it come the reason for the approach, the most common mistake in this kind of conversation and what to watch afterward.
+The `customer-success` skill reads the company context, asks what it still needs to know about the case and hands you the reply ready to send. With it come the reason for the approach, the most common mistake in this kind of conversation and what to watch afterward. The answer has this shape:
+
+```text
+What to do
+  Reply today and ask what changed before offering anything. [message ready to copy]
+
+Why
+  The reason given when cancelling is rarely the cause. Until you know the cause,
+  a discount solves the wrong problem.
+
+Common mistake
+  Opening with a discount. It teaches the customer that asking to leave lowers the price.
+
+Next step
+  Send the message today. If the cause is missing value, book 20 minutes this week
+  to go through what they have not used yet. It worked if they tell you the real reason.
+```
 
 ### This month's content
 
@@ -194,6 +216,7 @@ In the context folder, on your computer, in Markdown files you can open and edit
   <company>/processes/            procedures, policies and manuals, with an index
   <company>/social/               social media strategy, voice and calendar
   <company>/deliverables/         drafts, one folder per request
+  <company>/archive/              older entries moved out of the files that grow
   brand/<company>/identity.md     colors, type, logo use and tone
   brand/<company>/assets/         local copy of logo and brand files
 ```
@@ -237,7 +260,7 @@ For anything that changes quickly, such as ad platform and social media rules, m
 
 No. The plugin is made only of Markdown instructions, with no hooks, MCP servers or scripts.
 
-Two plugins pair well with it and are optional. The `motion-video` skill uses HeyGen's `hyperframes` to animate and render videos. When Corey Haines's `marketing-skills` is installed, the marketing and social media skills hand detailed execution to it.
+Some plugins and skills pair well with it and are optional. The `motion-video` skill uses HeyGen's `hyperframes` to animate and render videos, and `ffmpeg-skill` for cuts and subtitles after the render. When Corey Haines's `marketing-skills` is installed, the marketing and social media skills hand detailed execution to it. `proposals-presentations` uses the `pptx`, `docx` and `pdf` document skills to build the final file, and `social-media` runs drafts through `humanizer`. Without any of them the skills still work and say what was left out.
 
 </details>
 
@@ -252,6 +275,7 @@ No. On legal, labor, tax, privacy or security matters the plugin explains the co
 
 - [Plugin technical notes](business-ops/README.md): structure, the rules that keep the skills working in both agents, and companion plugins.
 - [Shared protocol](business-ops/skills/business-context/references/coach-protocol.md): how skills find the context, what may be claimed and the shape of the deliverable.
+- [Context formats](business-ops/skills/business-context/references/context-formats.md): the structure of each file in the context folder and of a lead record.
 - [Context skill](business-ops/skills/business-context/SKILL.md): the onboarding conversation and what each company file holds.
 - [Changelog](CHANGELOG.md).
 

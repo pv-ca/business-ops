@@ -1,6 +1,6 @@
 ---
 name: brand-offer
-description: "Defines or reviews the positioning, value proposition, offer and voice of one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user asks how to describe what they sell, wants a positioning statement, the main message for a site, deck or video, the design or review of plans, packages, price, guarantee or free trial, a tone-of-voice guide, or wants to know whether a claim or promise can be made."
+description: "Use whenever the user asks how to describe or position what they sell, wants a positioning statement or value proposition, the main message for a site, deck or video, the design or review of plans, packages, price, guarantee or free trial, a tone-of-voice guide, or wants to know whether a claim or promise can be made. Works from the company's saved context. A price or plan change that is already decided is recorded with `product-update`."
 ---
 
 # Brand and offer

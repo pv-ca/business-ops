@@ -1,6 +1,6 @@
 ---
 name: teach
-description: "Teaches a business concept as a mini-lesson that uses the user's own company as the example, with a short exercise. Use whenever the user asks to be taught or to have a business term, metric, method or framework explained (e.g. \"teach me what churn is\", \"explain CAC and LTV\", \"how does SPIN work?\"), or shows doubt about a concept while working on something else."
+description: "Use whenever the user asks to be taught or to have a business term, metric, method or framework explained (e.g. \"teach me what churn is\", \"explain CAC and LTV\", \"how does SPIN work?\"), or shows doubt about a concept while working on something else. Gives a mini-lesson that uses the user's own company as the example, with a short exercise."
 ---
 
 # Teach

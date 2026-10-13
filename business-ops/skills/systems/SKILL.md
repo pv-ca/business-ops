@@ -1,6 +1,6 @@
 ---
 name: systems
-description: "Design and specification of internal systems and tools for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user wants to choose or set up a CRM, a spreadsheet, a no-code tool or an automation, connect tools, write requirements for something to be built, compare buying against building, or organize where business data lives."
+description: "Use whenever the user wants to choose, specify or set up an internal tool or system: a CRM, a spreadsheet, a no-code tool or an automation, connect tools, write requirements for something to be built, compare buying against building, or organize where business data lives. Works from the company's saved context."
 ---
 
 # Systems

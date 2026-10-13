@@ -1,6 +1,6 @@
 ---
 name: processes-docs
-description: "Owns the processes and internal documentation of one of the user's own companies: maps how work is done, writes and maintains SOPs, checklists, policies, manuals, onboarding and training guides, and keeps the company's process library organized and current. Use whenever the user wants to document, standardize, review or improve a process or routine, write or update a procedure, policy, manual, checklist or internal guide, find or fix a bottleneck, rework or delay, delegate or hand over a task, decide what to automate, or asks which processes exist, which are outdated or who owns them (e.g. \"document this process\", \"write a step-by-step\", \"I need a cancellation policy\", \"organize our documentation\")."
+description: "Use whenever the user wants to document, standardize, review, audit or improve a process or routine: write or update an SOP, checklist, policy, manual, onboarding or training guide, find or fix a bottleneck, rework or delay, delegate or hand over a task, decide what to automate, or asks which processes exist, which are outdated or who owns them (e.g. \"document this process\", \"write a step-by-step\", \"I need a cancellation policy\", \"organize our documentation\"). Keeps the company's process library in its saved context."
 ---
 
 # Processes and documentation

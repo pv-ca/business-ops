@@ -2,6 +2,20 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.10.0 (2026-10-13)
+
+- Every skill description now starts with its trigger wording and ends by naming the neighbouring skill for look-alike requests. This separates `marketing` from `social-media` and `ads`, `management-strategy` from `quarterly-plan`, `sales` from `proposals-presentations` and `market-research`, and `material-review` from `proposals-presentations`.
+- Coach protocol: an urgent request that already carries its facts is answered before the onboarding when no context is saved yet; company selection now lists `method-adaptation.md` and `brand/<company>/identity.md` among the files to read; a skill's own output structure replaces the four blocks.
+- Prices live only in `catalog.md`. `business-context` no longer asks for them in `context.md`, and `sales` quotes from available catalog entries.
+- Tone is read from `brand/<company>/identity.md`, with `social/voice.md` for social media. `sales`, `customer-success` and `material-review` point there.
+- New `business-context/references/context-formats.md`: the structure of the profile, context, catalog, changelog, brand identity and lead record, plus a ceiling and an `archive/` folder for the files that grow. History sections are newest first everywhere.
+- `diagnosis` defines each rating from 1 to 5. `material-review` checks tone, applies the promise test and flags represented claims and prices that differ from the catalog.
+- The four playbooks have a table of contents. The numbering gaps are closed: customer success sections 44 to 46 are now 43 to 45, and recurring revenue 53 to 55 are now 52 to 54. The sales playbook gained a section on company-specific adaptation (50), so its last two sections are now 51 and 52.
+- Ten `books.md` files gained a pocket summary.
+- Leftover Portuguese in `commands/process.md`, `document-formats.md`, `template-format.md` and the `books.md` titles is now English.
+- Optional companions (`ffmpeg-skill`, document skills, `humanizer`) are documented, and each skill says what to do without them.
+- README: install command in the header includes the marketplace step, the five truth statuses are named, the Codex equivalent of each shortcut is listed, and an example shows the four-block answer.
+
 ## 0.9.0 (2026-10-13)
 
 - Files and folders of the context folder are now named in English: `business-ops-context.md`, `context.md`, `catalog.md`, `changelog.md`, `method-adaptation.md`, `templates/`, `processes/`, `deliverables/`, `brand/<company>/identity.md` with `assets/`, and `social/strategy.md`, `voice.md`, `calendar.md`. An existing context folder needs its files renamed to match.

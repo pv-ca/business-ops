@@ -1,6 +1,6 @@
 ---
 name: finance
-description: "Finance for decision-making in one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever a decision depends on numbers: cash flow, margin, pricing, break-even, unit economics (CAC, LTV, payback), budget, whether the company can afford a hire or an investment, or when the user wants a financial number explained in plain language."
+description: "Use whenever a business decision depends on numbers: cash flow, margin, pricing math, break-even, unit economics (CAC, LTV, payback), budget, whether the company can afford a hire or an investment, or when the user wants a financial number explained in plain language. Works from the company's saved context."
 ---
 
 # Finance

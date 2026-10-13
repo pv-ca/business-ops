@@ -1,6 +1,6 @@
 ---
 name: product-update
-description: "Records a launch or change in what one of the user's own companies sells (a new product, plan, price, module or feature, or a change to one) in that company's catalog and changelog, then lists the templates and materials that now need updating. Use whenever the user reports that something was launched, repriced, renamed, retired or changed status (e.g. \"we launched module X\", \"plan Y went up to 99\", \"this is available now\"), even if they do not ask to record it."
+description: "Use whenever the user reports that a product, plan, price, module or feature was launched, repriced, renamed, retired or changed status (e.g. \"we launched module X\", \"plan Y went up to 99\", \"this is available now\"), even if they do not ask to record it. Records the change in the company's catalog and changelog and lists the templates and materials that now need updating."
 ---
 
 # Product update

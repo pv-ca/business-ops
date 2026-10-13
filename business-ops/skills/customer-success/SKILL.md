@@ -1,6 +1,6 @@
 ---
 name: customer-success
-description: "Post-sale work for one of the user's own companies, grounded in that company's saved context and delivered as coaching. Use whenever the user asks for an onboarding or implementation plan, a sales-to-post-sale handoff, a definition of activation, a way to follow up customers or students, risk signals, a reply to a cancellation request, churn analysis, renewal, expansion, a referral request, or welcome, check-in and retention messages (e.g. \"the customer wants to cancel\", \"how do I onboard a new customer\", \"this client went quiet\")."
+description: "Use whenever the user asks for post-sale work: an onboarding or implementation plan, a sales-to-post-sale handoff, a definition of activation, a way to follow up customers or students, risk signals, a reply to a cancellation request, churn analysis, renewal, expansion, a referral request, or welcome, check-in and retention messages (e.g. \"the customer wants to cancel\", \"how do I onboard a new customer\", \"this client went quiet\"). Works from the company's saved context. A neutral interview with someone who cancelled, with no attempt to keep them, belongs to `market-research`."
 ---
 
 # Customer success
@@ -39,7 +39,7 @@ The company context says which column applies and carries the company-specific a
 
 ## Typical deliverables
 
-Templates in section 44 of the playbook: sales-to-post-sale handoff, onboarding plan, risk playbook, renewal plan, churn analysis. Also welcome, check-in, win-back and referral-request messages in the tone the company context defines.
+Templates in section 43 of the playbook: sales-to-post-sale handoff, onboarding plan, risk playbook, renewal plan, churn analysis. Also welcome, check-in, win-back and referral-request messages in the tone recorded in `brand/<company>/identity.md`.
 
 ## Mistakes this skill prevents
 

@@ -1,6 +1,6 @@
 ---
 name: social-media
-description: "Plans and writes organic social media for one of the user's own companies: content strategy, pillars, a standing calendar, and ready-to-post pieces (posts, carousels, short-video scripts, captions), grounded in that company's saved context. Use whenever the user asks what to post, wants content ideas, a content calendar or a month of posts, a social media strategy, a caption, a carousel, a Reels, TikTok or Shorts script, wants to repurpose something into posts, or to review what performed on Instagram, LinkedIn, TikTok, YouTube or Facebook (e.g. \"what should I post this week?\", \"build a content calendar\", \"make a carousel about this\", \"our Instagram has gone quiet\")."
+description: "Use whenever the user asks what to post, wants content ideas, a content calendar or a month of posts, a social media strategy, a caption, a carousel, a Reels, TikTok or Shorts script, wants to repurpose something into posts, or to review what performed on Instagram, LinkedIn, TikTok, YouTube or Facebook (e.g. \"what should I post this week?\", \"build a content calendar\", \"make a carousel about this\", \"our Instagram has gone quiet\"). Keeps the organic strategy, voice and standing calendar in the company's saved context. Paid campaigns belong to `ads`."
 ---
 
 # Social media

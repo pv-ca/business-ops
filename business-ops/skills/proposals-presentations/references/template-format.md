@@ -6,15 +6,15 @@ A template is a Markdown file in the company's `templates/` folder. It describes
 
 ```yaml
 ---
-template: proposta-comercial          # file name without extension
+template: commercial-proposal         # file name without extension
 company: acme                         # company folder name
-uses: [plano-basico, teste-gratis]    # catalog IDs this template depends on
-reference: "Document library: Propostas/Acme — Proposta comercial — 2026-08.pdf"
+uses: [basic-plan, free-trial]        # catalog IDs this template depends on
+reference: "Document library: Proposals/Acme - Commercial proposal - 2026-08.pdf"
 status: hypothesis                    # optional: the audience or offer is not validated yet
 ---
 ```
 
-`uses` is what connects a product change to the documents it affects. Keep it complete: every plan, price or feature the template mentions should be listed.
+`uses` is what connects a product change to the documents it affects. Each value is an ID from the company's `catalog.md`, written exactly as it appears there. Keep the list complete: every plan, price or feature the template mentions should be in it.
 
 ## Body
 
