@@ -257,7 +257,9 @@ Para o que muda rápido, como regras de plataformas de anúncio e de redes socia
 <details>
 <summary><strong>Preciso instalar mais alguma coisa?</strong></summary>
 
-Não. O plugin é feito só de instruções em Markdown, sem hooks, servidores MCP ou scripts.
+Não. O plugin é feito de instruções em Markdown, sem hooks e sem servidores MCP, então nada roda sozinho.
+
+Duas skills trazem um pequeno script Python para os passos em que o resultado exato importa: a `finance` calcula ponto de equilíbrio, economia unitária e projeção de caixa, e a `business-context` confere a estrutura da pasta de contexto. Eles usam só a biblioteca padrão do Python, leem as entradas e imprimem o resultado, sem gravar nos seus arquivos nem usar a rede. O agente pede para rodá-los como qualquer outro comando. Sem Python, as skills fazem o mesmo trabalho lendo os arquivos e mostrando a conta.
 
 Alguns plugins e skills combinam com ele e são opcionais. A skill `motion-video` usa o `hyperframes`, da HeyGen, para animar e renderizar os vídeos, e a `ffmpeg-skill` para cortes e legendas depois da renderização. Quando o `marketing-skills`, de Corey Haines, está instalado, as skills de marketing e de redes sociais passam a ele a execução detalhada. A `proposals-presentations` usa as skills de documento `pptx`, `docx` e `pdf` para montar o arquivo final, e a `social-media` passa os rascunhos pela `humanizer`. Sem nenhum deles as skills continuam funcionando e avisam o que ficou de fora.
 
@@ -286,9 +288,12 @@ business-ops/                     o plugin
   .claude-plugin/plugin.json      manifesto e versão
   .codex-plugin/plugin.json       o que o Codex mostra sobre o plugin
   skills/<nome>/SKILL.md          uma pasta por skill, com suas referências
+  skills/<nome>/scripts/          script opcional que a skill roda (Python, biblioteca padrão)
   commands/                       atalhos do Claude Code
 docs/readme/                      este README em outros idiomas
 scripts/validate.py               conferências que rodam a cada push
+scripts/bump_version.py           sobe a versão e abre a entrada do changelog
+tests/                            testes dos scripts das skills
 AGENTS.md                         regras para alterar o plugin
 CHANGELOG.md
 ```

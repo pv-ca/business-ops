@@ -43,6 +43,17 @@ Read what is there and change only what the user brought. Add each new fact at t
 
 Every skill reads these files on every request, so they have to stay short. When "Updates" passes about twenty entries, or holds entries older than a year, fold what still holds into the section it belongs to, move the folded entries to `<company>/archive/context-updates-YYYY.md`, and tell the user what was merged. The same rule applies to the other files that grow: see `references/context-formats.md`.
 
+## Checking the folder
+
+`scripts/check_context.py` (in this skill's folder) reads the context folder and reports what the other skills would trip over: a catalog ID that is repeated or malformed, a status outside the list, a template whose `uses` names an entry the catalog does not have or one that is not available, history that is out of order, and files past their ceiling. It only reads; it changes nothing.
+
+```
+python3 scripts/check_context.py <context folder>
+python3 scripts/check_context.py <context folder> --company <company>
+```
+
+Run it after creating or restructuring a catalog or a template, when the user asks whether the context is in order, and when a skill behaves as if an entry did not exist. Explain each finding in plain language and fix what is mechanical; a status is the user's statement, so ask before changing one. When Python is not available or the agent cannot run commands, make the same checks by reading the files against `references/context-formats.md`.
+
 ## Onboarding conversation
 
 Talk in short blocks, not a form. Ask at most three questions at a time, skip what was already answered, and take from any document the user shares before asking.

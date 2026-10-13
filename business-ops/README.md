@@ -49,6 +49,17 @@ Codex reads this folder as it is, so there is no build step and no second copy. 
 - Frontmatter uses `name` and `description` only. The description starts with the trigger wording (`Use whenever...`), because Codex shortens long descriptions, and ends by naming the neighbouring skill for requests that look similar and belong elsewhere.
 - A skill refers to another skill by name when it hands a request over, and by relative path (`../<skill>/SKILL.md`) when it needs that skill's method read as part of its own work.
 
+## Scripts
+
+Two skills carry a script for a step that must give the same result every time. Both are Python with the standard library only, read their inputs and print a result, and write nothing.
+
+| Script | Skill | Does | Without Python |
+| --- | --- | --- | --- |
+| `skills/business-context/scripts/check_context.py` | `business-context`, `product-update` | Checks catalog IDs and statuses, template `uses`, history order and file ceilings; lists what uses a catalog entry | The skill makes the same checks by reading the files |
+| `skills/finance/scripts/finance_calc.py` | `finance` | Break-even, recurring-revenue unit economics, cash projection with scenarios | The skill computes by hand from `references/formulas.md` and says so |
+
+A skill names its own script by a path relative to its folder (`scripts/<file>.py`) and another skill's by `../<skill>/scripts/<file>.py`, the same rule as for references.
+
 ## Books
 
 Most skills have a `references/books.md` that names the book behind each method. The plugin carries insights drawn from those books, written in its own words; it does not include their text. The four playbooks under `references/` are the owner's own syntheses.

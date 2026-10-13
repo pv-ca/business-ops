@@ -257,7 +257,9 @@ For anything that changes quickly, such as ad platform and social media rules, m
 <details>
 <summary><strong>Do I need to install anything else?</strong></summary>
 
-No. The plugin is made only of Markdown instructions, with no hooks, MCP servers or scripts.
+No. The plugin is made of Markdown instructions, with no hooks and no MCP servers, so nothing runs by itself.
+
+Two skills carry a small Python script for steps where an exact result matters: `finance` computes break-even, unit economics and cash projections, and `business-context` checks the structure of the context folder. They use only Python's standard library, read their inputs and print a result, and do not write to your files or use the network. The agent asks to run them like any other command. Without Python the skills do the same work by reading and by showing the calculation.
 
 Some plugins and skills pair well with it and are optional. The `motion-video` skill uses HeyGen's `hyperframes` to animate and render videos, and `ffmpeg-skill` for cuts and subtitles after the render. When Corey Haines's `marketing-skills` is installed, the marketing and social media skills hand detailed execution to it. `proposals-presentations` uses the `pptx`, `docx` and `pdf` document skills to build the final file, and `social-media` runs drafts through `humanizer`. Without any of them the skills still work and say what was left out.
 
@@ -286,9 +288,12 @@ business-ops/                     the plugin
   .claude-plugin/plugin.json      manifest and version
   .codex-plugin/plugin.json       what Codex shows about the plugin
   skills/<name>/SKILL.md          one folder per skill, with its references
+  skills/<name>/scripts/          optional script a skill runs (Python, standard library)
   commands/                       Claude Code shortcuts
 docs/readme/                      this README in other languages
 scripts/validate.py               checks run on every push
+scripts/bump_version.py           raises the version and opens the changelog entry
+tests/                            tests for the skills' scripts
 AGENTS.md                         rules for changing the plugin
 CHANGELOG.md
 ```

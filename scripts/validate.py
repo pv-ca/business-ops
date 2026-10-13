@@ -4,6 +4,7 @@
 Run from the repository root: python3 scripts/validate.py
 Exits 1 when any check fails.
 """
+import ast
 import json
 import re
 import sys
@@ -71,6 +72,35 @@ def check_relative_paths():
             bases = [path.parent, skill_dir]
             if not any((base / ref).exists() for base in bases):
                 fail(path, f"path does not exist: {ref}")
+        for ref in set(re.findall(r"(?<![\w/.-])((?:\.\./[\w-]+/)?scripts/[\w-]+\.py)", text)):
+            if not any((base / ref).exists() for base in (path.parent, skill_dir)):
+                fail(path, f"script does not exist: {ref}")
+
+
+def check_scripts():
+    """A skill's script runs on any machine with Python: standard library only, and named by its skill."""
+    for path in SKILLS.glob("*/scripts/*"):
+        if path.name == "__pycache__":
+            continue
+        if path.suffix != ".py":
+            fail(path, "skill scripts are Python files")
+            continue
+        try:
+            tree = ast.parse(path.read_text(encoding="utf-8"))
+        except SyntaxError as problem:
+            fail(path, f"does not parse: {problem}")
+            continue
+        for node in ast.walk(tree):
+            modules = []
+            if isinstance(node, ast.Import):
+                modules = [alias.name for alias in node.names]
+            elif isinstance(node, ast.ImportFrom) and node.level == 0:
+                modules = [node.module]
+            for module in modules:
+                if module.split(".")[0] not in sys.stdlib_module_names:
+                    fail(path, f"imports {module}, which is not in the standard library")
+        if f"scripts/{path.name}" not in (path.parent.parent / "SKILL.md").read_text(encoding="utf-8"):
+            fail(path, "is not named in its skill's SKILL.md")
 
 
 def check_playbooks():
@@ -98,7 +128,7 @@ def check_no_business_data():
     if extra.exists():
         patterns += [re.escape(t.strip()) for t in extra.read_text(encoding="utf-8").splitlines() if t.strip() and not t.startswith("#")]
     for path in PLUGIN.rglob("*"):
-        if path.is_file() and path.suffix in {".md", ".json"}:
+        if path.is_file() and path.suffix in {".md", ".json", ".py"}:
             text = path.read_text(encoding="utf-8")
             for pattern in patterns:
                 if re.search(pattern, text, re.I):
@@ -142,6 +172,7 @@ def check_commands():
 def main():
     names = check_skills()
     check_relative_paths()
+    check_scripts()
     check_playbooks()
     check_no_business_data()
     check_manifests(names)

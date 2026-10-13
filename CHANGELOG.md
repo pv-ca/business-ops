@@ -2,6 +2,13 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.13.0 (2026-10-13)
+
+- The plugin now carries scripts where an exact result matters. They are Python with the standard library only, read their inputs and print a result, and write nothing; each skill says what to do when no command can be run. There are still no hooks and no MCP servers.
+- `business-context` has `scripts/check_context.py`, which checks a context folder: catalog IDs and statuses, template `uses` against the catalog, history order and file ceilings. With `--uses <ID>` it lists the templates and files that depend on a catalog entry, and `product-update` uses it to find what a change affects and to check the folder afterwards.
+- `finance` has `scripts/finance_calc.py` (break-even, recurring-revenue unit economics, cash projection with scenarios) and `references/formulas.md` with the definitions it uses.
+- Added `tests/` for the scripts, run on every push, and `scripts/bump_version.py`, which raises the version in both manifests and opens the changelog entry. The validator now checks that skill scripts parse, import only the standard library and are named by their skill.
+
 ## 0.12.1 (2026-10-13)
 
 - The plugin manifest now carries homepage, repository, license and keywords, and a Codex manifest (`business-ops/.codex-plugin/plugin.json`) adds the display name, short description and example prompts Codex shows.

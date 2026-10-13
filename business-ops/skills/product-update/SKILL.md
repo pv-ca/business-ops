@@ -17,9 +17,11 @@ Take the change from the user's request. Ask for the company if it cannot be inf
 
 1. Update the company's `catalog.md`: add the entry with a stable ID or change the existing one. Set status to available only when the user says it is being sold now. Keep the old value visible in the changelog, not in the catalog.
 2. Add a dated entry at the top of `changelog.md`: what changed, from what to what, status, source.
-3. Find what the change affects: templates in `templates/` whose `uses` list names the entry, the company's message or e-mail rule files, and drafts in `deliverables/` that quote it. If the index names a document library, also search it for recent sent proposals or decks that quote the old value. List them; update the templates now and leave sent documents untouched, because they record what was said on their date.
+3. Find what the change affects: templates in `templates/` whose `uses` list names the entry, the company's message or e-mail rule files, and drafts in `deliverables/` that quote it. `python3 ../business-context/scripts/check_context.py <context folder> --company <company> --uses <ID>` (a path relative to this skill's folder) lists the templates and the files that mention the ID or the entry's name; it does not find an old price or an old name, so search for those too, and search by reading when the script cannot be run. If the index names a document library, also search it for recent sent proposals or decks that quote the old value. List them; update the templates now and leave sent documents untouched, because they record what was said on their date.
 4. If the change contradicts the company's `context.md` (for example something listed there as planned is now available), add a dated note in its "Updates" section.
 5. Offer, without doing it unasked: a short announcement for customers or leads, written only from the new catalog entry.
+
+6. When the catalog or a template changed, run `python3 ../business-context/scripts/check_context.py <context folder> --company <company>` and fix what it reports before finishing.
 
 ## Output
 

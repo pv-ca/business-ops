@@ -15,8 +15,9 @@ Read and follow `../business-context/references/coach-protocol.md` (a path relat
 2. **Keep revenue, cash and profit apart.** A sale is not cash until it is received; a profitable month can still run out of cash.
 3. **Build the simplest model that answers the question:** projected cash flow for "can we afford it", contribution margin per product or plan for "what should we push", break-even for "how much do we need to sell".
 4. **State every assumption** and show how the answer changes if the main one is wrong (a best, base and worst case is usually enough).
-5. **Explain each number in plain language** and what decision it supports.
-6. **Know the limit.** Tax, accounting and payroll rules need an accountant; explain the business consequence and say when to consult one. Verify current rates and rules on the web with source and date.
+5. **Compute with the script, not in your head.** `scripts/finance_calc.py` (in this skill's folder) does break-even, recurring-revenue unit economics and a month-by-month cash projection with scenarios, using the definitions in `references/formulas.md`. A slip in arithmetic looks as confident as a right answer, and the user will decide on it. For a model the script does not cover, write the calculation as code or show the working step by step; when no command can be run, compute by hand with the same formulas and say the figures were not machine-checked.
+6. **Explain each number in plain language** and what decision it supports.
+7. **Know the limit.** Tax, accounting and payroll rules need an accountant; explain the business consequence and say when to consult one. Verify current rates and rules on the web with source and date.
 
 ## Typical deliverables
 
