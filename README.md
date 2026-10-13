@@ -25,7 +25,7 @@
 
 Need to answer a lead, write a proposal, plan next month's content, or find out why customers cancel? Ask your agent. business-ops gives it the method for each area and the context of your company, and the answer arrives the way a coach would give it: what to do, why, the common mistake, and the next step.
 
-The plugin has 21 skills for sales, customer success, marketing, social media, processes, finance and management. On first use it asks about you and what the company sells, and saves the answers as Markdown files in a folder on your computer. If you run more than one company, each gets its own folder, and the plugin does not carry a price, a customer or a practice from one to another.
+The plugin has 22 skills for sales, customer success, marketing, social media, processes, finance and management. On first use it asks about you and what the company sells, and saves the answers as Markdown files in a folder on your computer. If you run more than one company, each gets its own folder, and the plugin does not carry a price, a customer or a practice from one to another.
 
 Anything written for your customers uses only what you have confirmed. Each fact about the company carries one of five statuses (confirmed, represented, planned, hypothesis or unknown), and plans and prices come from a catalog that records whether each one is available.
 
@@ -134,6 +134,7 @@ When you mention something new, such as a launch or a price change, the skill re
 | Diagnosis | A score per topic of one area, with its evidence, and the three priorities | `diagnosis` |
 | 90-day plan | Measurable goals, tasks by week, owners and review rhythm | `quarterly-plan` |
 | Learning | A mini-lesson on a concept with an example from your company and an exercise | `teach` |
+| Hard decisions | Five advisors with opposed angles answer, review each other anonymously, and one verdict comes out with a first step | `llm-council` |
 | Review | Critique of a piece of material, rewritten passages and a check of its claims against the context | `material-review` |
 
 Claude Code also has four shortcuts that only route to a skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` and `/business-ops:process`. Codex does not load plugin commands, so there you call the matching skill:

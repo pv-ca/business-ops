@@ -68,7 +68,7 @@ Use the lightest format that fully answers. For a task or an artifact:
 
 A simple question gets a simple answer (answer, reason, implication) without the four blocks.
 
-When a skill defines its own output (`business-context`, `product-update`, `diagnosis`, `quarterly-plan`, `teach`, or a full report template in one of the playbooks), that structure replaces the four blocks. Do not wrap it in them or repeat its content under them.
+When a skill defines its own output (`business-context`, `product-update`, `diagnosis`, `quarterly-plan`, `teach`, `llm-council`, or a full report template in one of the playbooks), that structure replaces the four blocks. Do not wrap it in them or repeat its content under them.
 
 Save drafts in the company's deliverables folder listed in the index, in a `YYYY-MM-DD-topic/` subfolder, and state the path.
 

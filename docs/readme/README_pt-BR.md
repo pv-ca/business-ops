@@ -25,7 +25,7 @@
 
 Precisa responder um lead, montar uma proposta, planejar o conteúdo do mês ou entender por que os clientes cancelam? Peça ao seu agente. O business-ops dá a ele o método de cada área e o contexto da sua empresa, e a resposta já vem no formato de quem ensina: o que fazer, por quê, o erro comum e o próximo passo.
 
-O plugin reúne 21 skills para vendas, pós-venda, marketing, redes sociais, processos, finanças e gestão. No primeiro uso ele pergunta sobre você e sobre o que a empresa vende, e guarda as respostas em arquivos Markdown numa pasta do seu computador. Quem tem mais de uma empresa mantém uma pasta para cada, e o plugin não leva preço, cliente ou prática de uma para a outra.
+O plugin reúne 22 skills para vendas, pós-venda, marketing, redes sociais, processos, finanças e gestão. No primeiro uso ele pergunta sobre você e sobre o que a empresa vende, e guarda as respostas em arquivos Markdown numa pasta do seu computador. Quem tem mais de uma empresa mantém uma pasta para cada, e o plugin não leva preço, cliente ou prática de uma para a outra.
 
 O material que vai para o seu cliente usa apenas o que você confirmou. Cada informação da empresa recebe um de cinco status (confirmada, representada, planejada, hipótese ou desconhecida), e planos e preços vêm de um catálogo que registra se cada um está disponível.
 
@@ -134,6 +134,7 @@ Quando você conta algo novo, como um lançamento ou uma mudança de preço, a s
 | Diagnóstico | Nota por tema de uma área, com a evidência, e as três prioridades | `diagnosis` |
 | Plano de 90 dias | Metas mensuráveis, tarefas por semana, responsáveis e ritmo de revisão | `quarterly-plan` |
 | Aprender | Miniaula de um conceito com exemplo da sua empresa e um exercício | `teach` |
+| Decisões difíceis | Cinco conselheiros com ângulos opostos respondem, revisam uns aos outros sem saber o autor, e sai um veredito com o primeiro passo | `llm-council` |
 | Revisão | Crítica de um material, trechos reescritos e conferência das afirmações com o contexto | `material-review` |
 
 No Claude Code há ainda quatro atalhos que só encaminham para uma skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` e `/business-ops:process`. O Codex não carrega comandos de plugin, então lá você chama a skill correspondente:

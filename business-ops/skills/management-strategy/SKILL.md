@@ -33,4 +33,4 @@ Strategy on one page (diagnosis, choice, actions), quarterly plan, OKRs, meeting
 
 ## Neighbouring skills
 
-`finance` (the numbers behind the decision), `processes-docs` (execution), `recurring-revenue` (scale readiness).
+`finance` (the numbers behind the decision), `processes-docs` (execution), `recurring-revenue` (scale readiness), `llm-council` (a costly, uncertain decision the user wants pressure-tested from opposed angles).
