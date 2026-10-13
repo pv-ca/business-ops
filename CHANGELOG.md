@@ -1,37 +1,45 @@
-# Histórico de versões
+# Changelog
 
-O número da versão fica em `business-ops/.claude-plugin/plugin.json`. Cada agente guarda uma cópia do plugin por versão, então toda mudança nas skills sobe o número.
+The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
-## 0.7.1 (13/10/2026)
+## 0.8.0 (2026-10-13)
 
-- As respostas deixaram de ter português do Brasil como padrão. Sem preferência registrada, o plugin responde no idioma em que a pessoa escreve.
-- Os rótulos da entrega e os exemplos das referências passaram para o inglês, com a regra de escrevê-los no idioma da resposta.
+- Skills, shortcuts and the plugin option are now named in English, since the plugin is meant for users anywhere. For example `vendas` became `sales`, `financas` became `finance`, and the option `pasta_contexto` became `context_folder`. Reinstall and set the option again after updating.
+- Trigger examples in the skill descriptions are in English.
+- Added the MIT license.
+- The README is in English, with a Brazilian Portuguese version in `docs/readme/`.
+- Book references now say what the plugin carries: insights in its own words, never the books' text.
 
-## 0.7.0 (13/10/2026)
+## 0.7.1 (2026-10-13)
 
-- O catálogo de instalação passou a se chamar `pvca`. O plugin agora é instalado como `business-ops@pvca`.
-- Primeiro commit no repositório próprio, com README em português e este histórico.
+- Replies no longer default to Brazilian Portuguese. With no recorded preference, the plugin answers in the language the user writes in.
+- Deliverable labels and reference examples moved to English, with the rule to render them in the reply language.
 
-## 0.6.1 (13/10/2026)
+## 0.7.0 (2026-10-13)
 
-- O plugin deixou de citar qualquer empresa. As seções de adaptação por empresa saíram de três playbooks e foram para o arquivo `adaptacao-dos-metodos.md` da pasta de contexto de cada empresa.
-- O protocolo passou a mandar ler esse arquivo antes de aplicar um método.
+- The install catalog is now named `pvca`, so the plugin installs as `business-ops@pvca`.
+- First commit in its own repository, with a README and this changelog.
 
-## 0.6.0 (13/10/2026)
+## 0.6.1 (2026-10-13)
 
-- Nova skill `social-media`: estratégia, voz, calendário permanente, peças e revisão mensal, com referências de plataformas, formatos e calendário.
+- The plugin no longer names any company. Company-specific sections left three playbooks and moved to an `adaptacao-dos-metodos.md` file in each company's context folder.
+- The protocol now tells skills to read that file before applying a method.
 
-## 0.5.0 (13/10/2026)
+## 0.6.0 (2026-10-13)
 
-- O plugin passou a funcionar no Codex a partir da mesma fonte.
-- `novidade`, `diagnostico`, `plano-trimestral`, `ensinar` e `revisar` deixaram de ser comandos e viraram skills, porque o Codex não carrega comandos de plugin.
-- As skills passaram a apontar para o protocolo por caminho relativo.
-- A pasta de contexto ganhou uma busca que não depende da configuração do Claude Code: instruções do projeto, depois `~/.config/business-ops/context-folder`, depois o diretório atual.
+- New `social-media` skill: strategy, voice, standing calendar, pieces and monthly review, with references for platforms, formats and the calendar.
 
-## 0.4.0 (13/10/2026)
+## 0.5.0 (2026-10-13)
 
-- O plugin foi renomeado de `negocio-coach` para `business-ops`, e o arquivo de perfil para `business-ops-contexto.md`.
+- The plugin now works in Codex from the same source.
+- Five commands became skills, because Codex does not load plugin commands.
+- Skills point to the shared protocol by relative path.
+- The context folder can be found without Claude Code's plugin settings: project instructions, then `~/.config/business-ops/context-folder`, then the current directory.
 
-## 0.3.1 e anteriores
+## 0.4.0 (2026-10-13)
 
-- Versões iniciais, com o nome `negocio-coach`, só para Claude Code.
+- Renamed from `negocio-coach` to `business-ops`.
+
+## 0.3.1 and earlier
+
+- First versions, named `negocio-coach`, for Claude Code only.

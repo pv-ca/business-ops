@@ -1,6 +1,6 @@
 # Books and frameworks: Marketing
 
-The book knowledge base for this plugin is still being prepared by the owner. Until it is added, apply these frameworks from what you know of them, name the source of each recommendation, and summarize in your own words without copying passages.
+This plugin carries insights drawn from these books, written in its own words; it does not include their text. Apply each framework from what you know of it, name the book behind a recommendation, and never copy passages.
 
 | Book | Use it for |
 | --- | --- |

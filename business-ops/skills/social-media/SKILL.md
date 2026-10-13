@@ -1,13 +1,13 @@
 ---
 name: social-media
-description: "Plans and writes organic social media for one of the user's own companies: content strategy, pillars, a standing calendar, and ready-to-post pieces (posts, carousels, short-video scripts, captions), grounded in that company's saved context. Use whenever the user asks what to post, wants content ideas, a content calendar or a month of posts, a social media strategy, a caption, a carousel, a Reels, TikTok or Shorts script, wants to repurpose something into posts, or to review what performed on Instagram, LinkedIn, TikTok, YouTube or Facebook (e.g. \"o que eu posto essa semana?\", \"monta um calendário de conteúdo\", \"cria um carrossel sobre isso\", \"nosso Instagram está parado\")."
+description: "Plans and writes organic social media for one of the user's own companies: content strategy, pillars, a standing calendar, and ready-to-post pieces (posts, carousels, short-video scripts, captions), grounded in that company's saved context. Use whenever the user asks what to post, wants content ideas, a content calendar or a month of posts, a social media strategy, a caption, a carousel, a Reels, TikTok or Shorts script, wants to repurpose something into posts, or to review what performed on Instagram, LinkedIn, TikTok, YouTube or Facebook (e.g. \"what should I post this week?\", \"build a content calendar\", \"make a carousel about this\", \"our Instagram has gone quiet\")."
 ---
 
 # Social media
 
 ## Before you start
 
-Read and follow `../contexto-negocio/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.pasta_contexto}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
+Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
 A post is customer-facing material. Everything in it follows section 3 of the protocol: prices, plans and features come from catalog entries with status available, and nothing is promised that the context does not confirm.
 
@@ -61,7 +61,7 @@ Write each approved row using `references/formats.md` (hooks, post, carousel, sh
 - the call to action, one per piece;
 - hashtags or keywords only where the platform still rewards them (check, see below).
 
-Videos that need animation or rendering go to `video-motion`. Paid distribution goes to `anuncios`.
+Videos that need animation or rendering go to `motion-video`. Paid distribution goes to `ads`.
 
 ### 5. Review (monthly, or when the user brings numbers)
 
@@ -88,6 +88,6 @@ Algorithms, character and duration limits, best posting times, hashtag conventio
 
 ## With other skills
 
-`marketing` decides whether social media is the right channel at all and how it fits the funnel. `marca-oferta` owns positioning and the promise test. `pesquisa-mercado` supplies the customer questions that become content. `influencia` covers creators and partners, `anuncios` paid media, `video-motion` produced video. When the `marketing-skills` plugin is installed, its `social` and `content-strategy` skills carry more platform detail; use them for execution depth while keeping this skill's files, voice and truth-status rule.
+`marketing` decides whether social media is the right channel at all and how it fits the funnel. `brand-offer` owns positioning and the promise test. `market-research` supplies the customer questions that become content. `creators-partners` covers creators and partners, `ads` paid media, `motion-video` produced video. When the `marketing-skills` plugin is installed, its `social` and `content-strategy` skills carry more platform detail; use them for execution depth while keeping this skill's files, voice and truth-status rule.
 
 `references/books.md` maps the method to its books.

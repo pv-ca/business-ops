@@ -75,7 +75,7 @@ Write for a viewer with the sound off who will decide in the first seconds.
 
 Structures that fit the delivery: problem and solution, a list of three, a tutorial that shows the result first, a short story with a turn.
 
-Deliver the script as a table: beat, what is said, what is on screen, text overlay. Add captions always. Say who appears and what needs to be recorded. Animated or screen-based videos go to `video-motion`.
+Deliver the script as a table: beat, what is said, what is on screen, text overlay. Add captions always. Say who appears and what needs to be recorded. Animated or screen-based videos go to `motion-video`.
 
 ## Caption
 

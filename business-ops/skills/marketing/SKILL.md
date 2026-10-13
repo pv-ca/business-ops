@@ -7,12 +7,12 @@ description: "Marketing strategy and planning for one of the user's own companie
 
 ## Before you start
 
-Read and follow `../contexto-negocio/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.pasta_contexto}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look. `references/books.md` lists the frameworks.
+Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look. `references/books.md` lists the frameworks.
 
 ## How to work
 
-1. **Audience, promise and positioning come before channel.** Read them from the company context; if positioning is weak or unconfirmed, fix that first with `marca-oferta`. A channel amplifies the message it is given.
-2. **Find where demand already is.** How current customers found the company, what they were doing before, what they searched or asked. If the context does not say, that is the first thing to learn (`pesquisa-mercado`).
+1. **Audience, promise and positioning come before channel.** Read them from the company context; if positioning is weak or unconfirmed, fix that first with `brand-offer`. A channel amplifies the message it is given.
+2. **Find where demand already is.** How current customers found the company, what they were doing before, what they searched or asked. If the context does not say, that is the first thing to learn (`market-research`).
 3. **Match the message to awareness** (Schwartz): someone who does not yet see the problem needs a different message from someone comparing options.
 4. **Pick one or two main channels** and justify them by audience fit, the company's capacity to sustain them and cost. A small team that spreads across five channels does none well.
 5. **Plan by funnel stage**, with one metric per stage and a calendar the team can actually keep.
@@ -32,4 +32,4 @@ One-page marketing plan, channel choice with rationale, content calendar, experi
 
 ## With other skills
 
-When installed, hand detailed execution to the specialist, keeping this skill's context and truth-status rule: `marketing-skills:marketing-plan`, `marketing-skills:content-strategy`, `marketing-skills:social`, `marketing-skills:emails`, `marketing-skills:referrals`, `marketing-skills:copywriting`, `marketing-skills:seo-audit`. Inside this plugin: `social-media` for the organic social strategy, calendar and pieces, `anuncios` for paid media, `influencia` for creators and partners, `video-motion` for video.
+When installed, hand detailed execution to the specialist, keeping this skill's context and truth-status rule: `marketing-skills:marketing-plan`, `marketing-skills:content-strategy`, `marketing-skills:social`, `marketing-skills:emails`, `marketing-skills:referrals`, `marketing-skills:copywriting`, `marketing-skills:seo-audit`. Inside this plugin: `social-media` for the organic social strategy, calendar and pieces, `ads` for paid media, `creators-partners` for creators and partners, `motion-video` for video.
