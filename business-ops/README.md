@@ -10,7 +10,7 @@ Plugin for business work, for Claude Code and Codex from the same source. It str
 
 The plugin holds no fact about any particular company. Everything specific to a business (context, catalog, brand, processes, how a method applies to it) lives in the user's context folder, so the plugin can be shared as it is.
 
-Instruction files are in English. Replies follow the user's language (Brazilian Portuguese by default).
+Instruction files are in English. Replies follow the language the user writes in, unless their saved preferences name another.
 
 ## Skills
 

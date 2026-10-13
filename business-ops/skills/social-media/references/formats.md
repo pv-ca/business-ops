@@ -16,7 +16,7 @@ How to build each kind of piece. Structures and hooks are starting shapes: fill 
 
 ## One idea per piece
 
-Write the idea as one sentence before writing the piece: "Marcar a aula no mesmo horário toda semana ajuda mais do que estudar muito num dia só." If it takes two sentences, it is two pieces. Everything in the piece serves that sentence.
+Write the idea as one sentence before writing the piece: "A fixed weekly slot helps a student more than one long study day." If it takes two sentences, it is two pieces. Everything in the piece serves that sentence.
 
 ## Hooks
 
@@ -97,16 +97,16 @@ One per piece, matched to how close the reader is:
 
 ## Patterns that sound generated
 
-Readers recognize these and scroll past. Rewrite when a draft has them:
+Readers recognize these and scroll past. The examples are in English, but each pattern has an equivalent in every language; look for it in the language of the post. Rewrite when a draft has them:
 
-- A contrast staged as a reveal ("Não é X. É Y."). State Y, with the reason.
-- A question the next line answers ("O resultado? ..."). Say the result.
+- A contrast staged as a reveal ("It is not X. It is Y."). State Y, with the reason.
+- A question the next line answers ("The result? ..."). Say the result.
 - One short sentence per line for the whole post.
 - Lists of three by reflex, and three-part closers.
 - An emoji opening every line.
-- Closers that ask for agreement ("Concorda?", "Faz sentido?").
+- Closers that ask for agreement ("Agree?", "Makes sense?").
 - Invented vulnerability: a dramatic personal confession with no real story behind it.
-- Inflated words: revolucionar, transformar, potencializar, destravar, jornada, "no mundo de hoje".
+- Inflated words: revolutionize, transform, unlock, empower, journey, "in today's world".
 - Dashes used as dramatic pauses.
 
 When the `humanizer` skill is available, run the draft through it.

@@ -9,7 +9,7 @@
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#início-rápido)
 [![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#início-rápido)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-5c4ee5?style=flat-square)](#o-que-dá-para-fazer)
-[![Idioma](https://img.shields.io/badge/respostas-pt--BR-009c3b?style=flat-square)](#perguntas-frequentes)
+[![Idioma](https://img.shields.io/badge/respostas-no_seu_idioma-009c3b?style=flat-square)](#perguntas-frequentes)
 [![Status](https://img.shields.io/badge/status-rascunho-f4c430?style=flat-square)](CHANGELOG.md)
 
 [Início rápido](#início-rápido) · [Como funciona](#como-funciona) · [O que dá para fazer](#o-que-dá-para-fazer) · [Exemplos de pedidos](#exemplos-de-pedidos) · [Perguntas frequentes](#perguntas-frequentes) · [Documentação](#documentação)
@@ -215,7 +215,7 @@ Não. Ele entrega o texto pronto para copiar. Enviar, publicar, gastar dinheiro 
 <details>
 <summary><strong>Em que idioma ele responde?</strong></summary>
 
-No seu, com português do Brasil como padrão. Os arquivos de instrução das skills estão em inglês, o que não afeta a resposta.
+No idioma em que você escrever. Se preferir outro, diga uma vez e ele fica registrado no seu perfil. O material para clientes sai no idioma dos clientes daquela empresa. Os arquivos de instrução das skills estão em inglês, o que não afeta a resposta.
 
 </details>
 

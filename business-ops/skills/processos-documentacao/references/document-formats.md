@@ -1,6 +1,6 @@
 # Document formats
 
-Formats for the internal documents this skill writes. Each is a Markdown file in the company's `processos/` folder. Headings and body are in the language the team reads (Brazilian Portuguese unless the context says otherwise); the front matter keys stay in English so tools can read them.
+Formats for the internal documents this skill writes. Each is a Markdown file in the company's `processos/` folder. Headings and body are in the language the team reads (the language of the company's existing documents, or the user's when there are none); the front matter keys stay in English so tools can read them.
 
 ## Front matter (every document)
 

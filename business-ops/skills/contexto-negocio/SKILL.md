@@ -42,7 +42,7 @@ Talk in short blocks, not a form. Ask at most three questions at a time, skip wh
 2. **Companies:** for each one, what it sells, to whom, revenue model, team size, stage (idea, traction, growth, maturity), current channels.
 3. **Situation:** main pain today, goal for the next 90 days, what was already tried, tools in use, budget and time available.
 4. **Level:** familiarity with each area (sales, marketing, operations, finance, management). This sets the depth of the coaching.
-5. **Preferences:** language, tone, short or detailed format, whether they want the explanation along with the plan.
+5. **Preferences:** reply language (record it only when the user states one; otherwise replies follow the language they write in), tone, short or detailed format, whether they want the explanation along with the plan.
 
 ## What a company file holds
 

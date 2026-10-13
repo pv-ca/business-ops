@@ -2,6 +2,11 @@
 
 O número da versão fica em `business-ops/.claude-plugin/plugin.json`. Cada agente guarda uma cópia do plugin por versão, então toda mudança nas skills sobe o número.
 
+## 0.7.1 (13/10/2026)
+
+- As respostas deixaram de ter português do Brasil como padrão. Sem preferência registrada, o plugin responde no idioma em que a pessoa escreve.
+- Os rótulos da entrega e os exemplos das referências passaram para o inglês, com a regra de escrevê-los no idioma da resposta.
+
 ## 0.7.0 (13/10/2026)
 
 - O catálogo de instalação passou a se chamar `pvca`. O plugin agora é instalado como `business-ops@pvca`.
