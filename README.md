@@ -6,8 +6,6 @@
 
 ### A plugin for running your company's business work with Claude Code and Codex.
 
-**Tell it about your company once. Every skill starts from that context.**
-
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#quick-start)
 [![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#quick-start)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-5c4ee5?style=flat-square)](#what-you-can-do)
