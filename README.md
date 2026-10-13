@@ -134,7 +134,7 @@ When you mention something new, such as a launch or a price change, the skill re
 | Diagnosis | A score per topic of one area, with its evidence, and the three priorities | `diagnosis` |
 | 90-day plan | Measurable goals, tasks by week, owners and review rhythm | `quarterly-plan` |
 | Learning | A mini-lesson on a concept with an example from your company and an exercise | `teach` |
-| Hard decisions | Five advisors with opposed angles answer, review each other anonymously, and one verdict comes out with a first step | `llm-council` |
+| Hard decisions | Six advisors with opposed angles answer independently, a reviewer checks them when they conflict on something that matters, and a chairman gives one verdict with a first step | `llm-council` |
 | Review | Critique of a piece of material, rewritten passages and a check of its claims against the context | `material-review` |
 
 Claude Code also has four shortcuts that only route to a skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` and `/business-ops:process`. Codex does not load plugin commands, so there you call the matching skill:

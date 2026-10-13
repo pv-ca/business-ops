@@ -134,7 +134,7 @@ Quando você conta algo novo, como um lançamento ou uma mudança de preço, a s
 | Diagnóstico | Nota por tema de uma área, com a evidência, e as três prioridades | `diagnosis` |
 | Plano de 90 dias | Metas mensuráveis, tarefas por semana, responsáveis e ritmo de revisão | `quarterly-plan` |
 | Aprender | Miniaula de um conceito com exemplo da sua empresa e um exercício | `teach` |
-| Decisões difíceis | Cinco conselheiros com ângulos opostos respondem, revisam uns aos outros sem saber o autor, e sai um veredito com o primeiro passo | `llm-council` |
+| Decisões difíceis | Seis conselheiros com ângulos opostos respondem de forma independente, um revisor confere quando há conflito que muda a decisão, e o presidente do conselho dá um veredito com o primeiro passo | `llm-council` |
 | Revisão | Crítica de um material, trechos reescritos e conferência das afirmações com o contexto | `material-review` |
 
 No Claude Code há ainda quatro atalhos que só encaminham para uma skill: `/business-ops:context`, `/business-ops:proposal`, `/business-ops:presentation` e `/business-ops:process`. O Codex não carrega comandos de plugin, então lá você chama a skill correspondente:

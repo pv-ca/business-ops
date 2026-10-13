@@ -31,7 +31,7 @@ Instruction files are in English. Replies follow the language the user writes in
 | `management-strategy`, `finance` | Priorities and plans, numbers for decisions | books |
 | `product-update` | Records a product, plan, price or feature change and lists what it affects | catalog and changelog |
 | `diagnosis`, `quarterly-plan` | Area diagnosis with 3 priorities; 90-day plan | the area's skill, `management-strategy` |
-| `llm-council` | Pressure-tests a costly decision: five opposed advisors, anonymous peer review, one verdict | Karpathy's LLM Council method, prompt templates |
+| `llm-council` | Pressure-tests a costly decision: six advisors with opposed lenses, a review when they conflict on something material, one verdict from the Chairman | Karpathy's LLM Council method, prompt templates |
 | `teach`, `material-review` | Mini-lesson from the user's own company; critique and rewrite of a material | coach protocol |
 
 ## Calling it

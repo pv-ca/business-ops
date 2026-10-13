@@ -2,6 +2,13 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.12.0 (2026-10-13)
+
+- `llm-council` now has seven members: a sixth advisor, the Hacker, and the Chairman as a separate member that holds no lens and decides from the brief, the opinions and any review.
+- The review round is selective: one or two reviewers who wrote none of the opinions are called only when the opinions conflict on something that could change the choice. Otherwise the council goes straight to the Chairman and says why.
+- Each opinion returns conclusion, evidence, limitations and next step. The verdict ends with the limits of that council: which members ran, whether a review was made, and what was not independent.
+- The skill names three paths (direct answer, partial consultation, full council) and says what to do when subagents, an advisor or a reviewer are missing.
+
 ## 0.11.0 (2026-10-13)
 
 - New skill `llm-council`: pressure-tests a costly, uncertain decision. Five advisors with opposed thinking styles answer from a brief built on the company's context, review each other anonymously, and the chairman gives one verdict with what would change it and a first step. It follows Andrej Karpathy's LLM Council method and works without subagents, with the loss of independence stated in the verdict.
