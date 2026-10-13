@@ -1,6 +1,6 @@
 ---
 name: business-context
-description: "Creates and maintains the saved context the business-ops plugin works from: the user's profile and one context file per company. Use on first use of the plugin, when `business-ops-contexto.md` is missing, when the user says their company, role, offer, price or goal changed, when they add a new company, or when another skill finds the context outdated or too thin for the task."
+description: "Creates and maintains the saved context the business-ops plugin works from: the user's profile and one context file per company. Use on first use of the plugin, when `business-ops-context.md` is missing, when the user says their company, role, offer, price or goal changed, when they add a new company, or when another skill finds the context outdated or too thin for the task."
 ---
 
 # Business context
@@ -13,17 +13,17 @@ Context folder configured in the plugin: `${user_config.context_folder}`. When t
 
 ```
 <context folder>/
-  business-ops-contexto.md      profile + index of companies
-  <company>/contexto.md          stable facts about that company
-  <company>/catalogo.md          plans, prices, modules and features, each with a status
-  <company>/novidades.md         dated changelog of launches and changes
-  <company>/modelos/             templates for proposals, presentations, messages
-  <company>/processos/           process library: SOPs, policies, manuals, with an index
-  <company>/adaptacao-dos-metodos.md  how the plugin's general methods apply to this company
-  <company>/social/              social media: strategy, voice and the standing calendar
-  <company>/entregas/            drafts, one YYYY-MM-DD-topic/ subfolder per request
-  marca/<company>/identidade.md  colors, type, logo use, tone
-  marca/<company>/arquivos/      local copy of logo and brand files
+  business-ops-context.md         profile and index of companies
+  <company>/context.md            identity, positioning, what is confirmed
+  <company>/catalog.md            plans, prices and features, each with a status
+  <company>/changelog.md          dated record of launches and changes
+  <company>/method-adaptation.md  how the general methods apply to this company
+  <company>/templates/            templates for proposals, presentations and messages
+  <company>/processes/            procedures, policies and manuals, with an index
+  <company>/social/               social media strategy, voice and calendar
+  <company>/deliverables/         drafts, one folder per request
+  brand/<company>/identity.md     colors, type, logo use and tone
+  brand/<company>/assets/         local copy of logo and brand files
 ```
 
 The index also records, per company, the path of its document library (the real archive, often a shared drive) and of its lead register when there is one. Create the catalog, changelog, brand and template files when the company first needs them, not all upfront.
@@ -55,7 +55,7 @@ Talk in short blocks, not a form. Ask at most three questions at a time, skip wh
 - Legacy brands or products whose terms no longer apply.
 - Updates, dated.
 
-Plans, prices, modules and features do not go here: they go in `catalogo.md`, because they change more often than the rest and other files reference them by ID. Product changes are recorded through the `product-update` skill.
+Plans, prices, modules and features do not go here: they go in `catalog.md`, because they change more often than the rest and other files reference them by ID. Product changes are recorded through the `product-update` skill.
 
 ## Output
 

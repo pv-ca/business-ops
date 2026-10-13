@@ -13,7 +13,7 @@
 
 Pillars are the three to five themes the company returns to. Formats are the shapes a theme can take. Crossing them turns "what do I post?" into a grid to fill.
 
-Write the matrix in `social/estrategia.md`:
+Write the matrix in `social/strategy.md`:
 
 | Pillar | Serves the objective by | Share | Example ideas |
 | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ In order of value, because the first ones are in the audience's own words:
 
 ## The standing calendar
 
-`social/calendario.md` is one table that grows. Newest period on top.
+`social/calendar.md` is one table that grows. Newest period on top.
 
 | Date | Channel | Format | Pillar | Idea (one sentence) | Source | Status | Result |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,6 +92,6 @@ Then:
 1. Rank the month's pieces by the metric of the objective, and tag each with its pillar and format.
 2. Name what the top three share and what the bottom three share.
 3. Decide: repeat (what), stop (what), test (one experiment, with the criterion that will count as success).
-4. Record the decision and its date at the top of `social/estrategia.md`. If the same pillar underperforms for two months, change the strategy rather than the captions.
+4. Record the decision and its date at the top of `social/strategy.md`. If the same pillar underperforms for two months, change the strategy rather than the captions.
 
 A small account produces small samples. Say when a difference is too small to mean anything, and prefer patterns across several pieces to the result of one.

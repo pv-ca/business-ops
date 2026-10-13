@@ -56,7 +56,7 @@ The order matters: narration drives timing, and timing drives animation. Animati
 - Ease in and out; nothing starts or stops instantly. Stagger related elements by a few frames so the eye can follow.
 - Anticipation before a big move and a small settle after it make interface animation feel physical.
 - On-screen text is a few words that reinforce the narration, never the full sentence being spoken. Leave it on screen long enough to be read twice.
-- Use the company's colors, type and logo from its brand identity file (`marca/<company>/identidade.md` in the context folder, with the logo files beside it). If something is not documented there, ask rather than invent it.
+- Use the company's colors, type and logo from its brand identity file (`brand/<company>/identity.md` in the context folder, with the logo files beside it). If something is not documented there, ask rather than invent it.
 
 ## Where files go
 

@@ -1,6 +1,6 @@
 # Template format
 
-A template is a Markdown file in the company's `modelos/` folder. It describes a document; it is not the document. The skill reads it, gathers the inputs and builds the real file.
+A template is a Markdown file in the company's `templates/` folder. It describes a document; it is not the document. The skill reads it, gathers the inputs and builds the real file.
 
 ## Front matter
 

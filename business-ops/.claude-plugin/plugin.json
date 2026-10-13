@@ -1,6 +1,6 @@
 {
   "name": "business-ops",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Business coaching plugin: sales, recurring revenue, customer success, research, marketing, brand and offer, video, operations, management and finance. Works from the saved context of each of the user's companies, separates fact from hypothesis and delivers in a coach format.",
   "author": {
     "name": "Paulo Victor"
@@ -9,7 +9,7 @@
     "context_folder": {
       "type": "directory",
       "title": "Context folder",
-      "description": "Folder that holds business-ops-contexto.md and one context file per company."
+      "description": "Folder that holds business-ops-context.md and one context file per company."
     }
   }
 }

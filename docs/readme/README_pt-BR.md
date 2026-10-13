@@ -185,19 +185,20 @@ Na pasta de contexto, no seu computador, em arquivos Markdown que você pode abr
 
 ```
 <pasta de contexto>/
-  business-ops-contexto.md            perfil e índice das empresas
-  <empresa>/contexto.md               identidade, posicionamento, o que está confirmado
-  <empresa>/catalogo.md               planos, preços e recursos, cada um com status
-  <empresa>/novidades.md              histórico de lançamentos e mudanças
-  <empresa>/adaptacao-dos-metodos.md  como os métodos gerais se aplicam a esta empresa
-  <empresa>/modelos/                  modelos de proposta, apresentação e mensagem
-  <empresa>/processos/                procedimentos, políticas e manuais
-  <empresa>/social/                   estratégia, voz e calendário de redes sociais
-  <empresa>/entregas/                 rascunhos, uma pasta por pedido
-  marca/<empresa>/identidade.md       cores, tipografia, uso do logo e tom
+  business-ops-context.md         perfil e índice das empresas
+  <empresa>/context.md            identidade, posicionamento, o que está confirmado
+  <empresa>/catalog.md            planos, preços e recursos, cada um com status
+  <empresa>/changelog.md          histórico de lançamentos e mudanças
+  <empresa>/method-adaptation.md  como os métodos gerais se aplicam a esta empresa
+  <empresa>/templates/            modelos de proposta, apresentação e mensagem
+  <empresa>/processes/            procedimentos, políticas e manuais, com índice
+  <empresa>/social/               estratégia, voz e calendário de redes sociais
+  <empresa>/deliverables/         rascunhos, uma pasta por pedido
+  brand/<empresa>/identity.md     cores, tipografia, uso do logo e tom
+  brand/<empresa>/assets/         cópia local do logo e dos arquivos da marca
 ```
 
-Os arquivos são criados quando a empresa precisa deles pela primeira vez. Os nomes de arquivos e pastas ainda estão em português e passarão para o inglês antes de o plugin ser publicado.
+Os arquivos são criados quando a empresa precisa deles pela primeira vez.
 
 </details>
 

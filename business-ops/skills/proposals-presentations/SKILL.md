@@ -9,7 +9,7 @@ description: "Builds commercial proposals, sales presentations, one-pagers and p
 
 Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
-Then read, for the company in question: `catalogo.md` (what may be offered, at what price), the brand identity in `marca/<company>/identidade.md` (colors, type, logo files, tone) and the `modelos/` folder with its README.
+Then read, for the company in question: `catalog.md` (what may be offered, at what price), the brand identity in `brand/<company>/identity.md` (colors, type, logo files, tone) and the `templates/` folder with its README.
 
 ## Why templates
 
@@ -17,13 +17,13 @@ A proposal assembled from scratch each time drifts: prices get copied from an ol
 
 ## Producing a document
 
-1. **Pick the template** in the company's `modelos/` that matches the request. If none matches, say so and offer to create one (see below) rather than improvising a one-off.
+1. **Pick the template** in the company's `templates/` that matches the request. If none matches, say so and offer to create one (see below) rather than improvising a one-off.
 2. **Gather the variable inputs** the template lists. Take them from what the user pasted, from the lead's record if the company keeps a lead register, and from meeting notes or transcripts in the document library when the user points to them. Ask for what is missing; a diagnosis fact is never invented.
 3. **Check fit before writing.** A proposal needs a diagnosed situation and one plan to recommend. If the conversation did not get that far, tell the user what is missing and what to do first (the `sales` skill covers discovery).
 4. **Fill the blocks.** Fixed blocks keep the template wording. Catalog blocks copy price, capacity and inclusions from the catalog today. Variable blocks use the customer's own words and numbers.
 5. **Run the claim check** below on the finished text.
 6. **Build the file** in the format the template names, matching the look of the most recent reference original in the document library and the brand notes. Use the document skills available in the session for the format (`pptx` for decks, `docx` or `pdf` for proposals and one-pagers). Render and look at the result before presenting it: text that overflows or a missing logo is caught by looking, not by assuming.
-7. **Save the draft** in the company's `entregas/YYYY-MM-DD-topic/` folder and show it. When the user approves it as final, offer to save it to the matching folder of the document library with that library's naming pattern, and write only after the user agrees to that write.
+7. **Save the draft** in the company's `deliverables/YYYY-MM-DD-topic/` folder and show it. When the user approves it as final, offer to save it to the matching folder of the document library with that library's naming pattern, and write only after the user agrees to that write.
 
 ## Claim check
 
@@ -41,10 +41,10 @@ List for the user anything you removed or softened and why, so they can correct 
 ## Creating or updating a template
 
 1. Find what the company already sent: look in the document library for the most recent real proposal or deck of that kind and read it. Real documents show the structure and tone that already work, which is better than a generic outline.
-2. Write the template as a Markdown file in `modelos/` with front matter `template`, `company`, `uses` (the catalog IDs it depends on), `reference` (the original it was based on) and, for an unvalidated audience, `status: hypothesis`.
+2. Write the template as a Markdown file in `templates/` with front matter `template`, `company`, `uses` (the catalog IDs it depends on), `reference` (the original it was based on) and, for an unvalidated audience, `status: hypothesis`.
 3. Describe each block: its order, whether it is fixed, variable or filled from the catalog, and what goes in it. Put fixed customer-facing wording in the customer's language.
 4. End with the rules specific to that document.
-5. Add it to the `modelos/README.md` table.
+5. Add it to the `templates/README.md` table.
 
 `references/template-format.md` shows the format with an annotated example.
 

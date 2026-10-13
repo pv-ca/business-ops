@@ -185,19 +185,20 @@ In the context folder, on your computer, in Markdown files you can open and edit
 
 ```
 <context folder>/
-  business-ops-contexto.md            profile and index of companies
-  <company>/contexto.md               identity, positioning, what is confirmed
-  <company>/catalogo.md               plans, prices and features, each with a status
-  <company>/novidades.md              changelog of launches and changes
-  <company>/adaptacao-dos-metodos.md  how the general methods apply to this company
-  <company>/modelos/                  templates for proposals, presentations and messages
-  <company>/processos/                procedures, policies and manuals
-  <company>/social/                   social media strategy, voice and calendar
-  <company>/entregas/                 drafts, one folder per request
-  marca/<company>/identidade.md       colors, type, logo use and tone
+  business-ops-context.md         profile and index of companies
+  <company>/context.md            identity, positioning, what is confirmed
+  <company>/catalog.md            plans, prices and features, each with a status
+  <company>/changelog.md          dated record of launches and changes
+  <company>/method-adaptation.md  how the general methods apply to this company
+  <company>/templates/            templates for proposals, presentations and messages
+  <company>/processes/            procedures, policies and manuals, with an index
+  <company>/social/               social media strategy, voice and calendar
+  <company>/deliverables/         drafts, one folder per request
+  brand/<company>/identity.md     colors, type, logo use and tone
+  brand/<company>/assets/         local copy of logo and brand files
 ```
 
-Files are created the first time a company needs them. The file and folder names are still in Portuguese; they will move to English before the plugin is published.
+Files are created the first time a company needs them.
 
 </details>
 

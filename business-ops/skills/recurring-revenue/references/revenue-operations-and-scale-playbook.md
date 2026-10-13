@@ -1218,7 +1218,7 @@ Do not call activity an experiment without a decision rule.
 
 ## 51. Reading the company's own adaptation
 
-The user's own companies differ in model, buyer and stage, so this playbook stays general. When the company's folder in the context folder holds `adaptacao-dos-metodos.md`, read the part about this subject before recommending: it records how the method applies to that company (who to interview, what constrains growth, which practices are too heavy for it). When there is no such file and the adaptation matters, work it out from the company's context file and offer to record it there.
+The user's own companies differ in model, buyer and stage, so this playbook stays general. When the company's folder in the context folder holds `method-adaptation.md`, read the part about this subject before recommending: it records how the method applies to that company (who to interview, what constrains growth, which practices are too heavy for it). When there is no such file and the adaptation matters, work it out from the company's context file and offer to record it there.
 
 ---
 

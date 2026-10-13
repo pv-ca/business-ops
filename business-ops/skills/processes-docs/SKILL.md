@@ -9,7 +9,7 @@ description: "Owns the processes and internal documentation of one of the user's
 
 Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
-Then open the company's process library: `processos/README.md` in its folder. It is the index of every process and internal document, with owner, status and last review. `references/document-formats.md` has the format for each kind of document and `references/books.md` the frameworks.
+Then open the company's process library: `processes/README.md` in its folder. It is the index of every process and internal document, with owner, status and last review. `references/document-formats.md` has the format for each kind of document and `references/books.md` the frameworks.
 
 ## What this skill is for
 
@@ -19,15 +19,15 @@ A document nobody follows is worse than none, because it looks like control. So 
 
 ## The process library
 
-Each company has a `processos/` folder:
+Each company has a `processes/` folder:
 
 ```
-processos/
+processes/
   README.md            index: every process and document, owner, status, last review, where the file is
   <area>/<name>.md     one document per process, policy or guide
 ```
 
-- **Source and final copy.** The Markdown file in `processos/` is the working source: easy to edit, compare and review. When the user approves a version for use by the team, offer to export it (PDF or DOCX) to the matching folder of the company's document library. Writing there needs the user's approval for that write.
+- **Source and final copy.** The Markdown file in `processes/` is the working source: easy to edit, compare and review. When the user approves a version for use by the team, offer to export it (PDF or DOCX) to the matching folder of the company's document library. Writing there needs the user's approval for that write.
 - **Statuses:** `draft` (being written), `in review` (waiting for the user or the process owner), `approved` (in use, with the approval date), `outdated` (known not to match practice), `retired`.
 - **Existing documents.** The index also lists documents that already exist in the document library and were not written here. Their status is `existing, approval not established` until the user says which version is in force. Before writing something new, check whether such a document exists and build on it; several versions of the same manual is exactly the problem this library solves.
 - Only the user moves a document to `approved`. Record who approved and when.

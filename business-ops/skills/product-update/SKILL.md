@@ -15,10 +15,10 @@ Take the change from the user's request. Ask for the company if it cannot be inf
 
 ## Steps
 
-1. Update the company's `catalogo.md`: add the entry with a stable ID or change the existing one. Set status to available only when the user says it is being sold now. Keep the old value visible in the changelog, not in the catalog.
-2. Add a dated entry at the top of `novidades.md`: what changed, from what to what, status, source.
-3. Find what the change affects: templates in `modelos/` whose `uses` list names the entry, the company's message or e-mail rule files, and drafts in `entregas/` that quote it. If the index names a document library, also search it for recent sent proposals or decks that quote the old value. List them; update the templates now and leave sent documents untouched, because they record what was said on their date.
-4. If the change contradicts the company's `contexto.md` (for example something listed there as planned is now available), add a dated note in its "Updates" section.
+1. Update the company's `catalog.md`: add the entry with a stable ID or change the existing one. Set status to available only when the user says it is being sold now. Keep the old value visible in the changelog, not in the catalog.
+2. Add a dated entry at the top of `changelog.md`: what changed, from what to what, status, source.
+3. Find what the change affects: templates in `templates/` whose `uses` list names the entry, the company's message or e-mail rule files, and drafts in `deliverables/` that quote it. If the index names a document library, also search it for recent sent proposals or decks that quote the old value. List them; update the templates now and leave sent documents untouched, because they record what was said on their date.
+4. If the change contradicts the company's `context.md` (for example something listed there as planned is now available), add a dated note in its "Updates" section.
 5. Offer, without doing it unasked: a short announcement for customers or leads, written only from the new catalog entry.
 
 ## Output

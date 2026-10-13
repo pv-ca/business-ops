@@ -2,6 +2,10 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.9.0 (2026-10-13)
+
+- Files and folders of the context folder are now named in English: `business-ops-context.md`, `context.md`, `catalog.md`, `changelog.md`, `method-adaptation.md`, `templates/`, `processes/`, `deliverables/`, `brand/<company>/identity.md` with `assets/`, and `social/strategy.md`, `voice.md`, `calendar.md`. An existing context folder needs its files renamed to match.
+
 ## 0.8.0 (2026-10-13)
 
 - Skills, shortcuts and the plugin option are now named in English, since the plugin is meant for users anywhere. For example `vendas` became `sales`, `financas` became `finance`, and the option `pasta_contexto` became `context_folder`. Reinstall and set the option again after updating.

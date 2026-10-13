@@ -1,6 +1,6 @@
 # Document formats
 
-Formats for the internal documents this skill writes. Each is a Markdown file in the company's `processos/` folder. Headings and body are in the language the team reads (the language of the company's existing documents, or the user's when there are none); the front matter keys stay in English so tools can read them.
+Formats for the internal documents this skill writes. Each is a Markdown file in the company's `processes/` folder. Headings and body are in the language the team reads (the language of the company's existing documents, or the user's when there are none); the front matter keys stay in English so tools can read them.
 
 ## Front matter (every document)
 
@@ -68,7 +68,7 @@ For seeing a flow end to end. A table works better than a diagram for most small
 
 Mark the constraint (the step that limits the flow) and note the evidence for it.
 
-## Library index (`processos/README.md`)
+## Library index (`processes/README.md`)
 
 | Documento | Tipo | Área | Responsável | Status | Última revisão | Rever até | Arquivo |
 | --- | --- | --- | --- | --- | --- | --- | --- |

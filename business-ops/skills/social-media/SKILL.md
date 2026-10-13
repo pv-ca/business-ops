@@ -17,17 +17,17 @@ Social media fails less from a lack of ideas than from stopping: posting falls o
 
 | File | Holds |
 | --- | --- |
-| `social/estrategia.md` | Objective, audience, channels, pillars, cadence, metrics. One page. |
-| `social/voz.md` | How the company sounds in posts, with real examples. |
-| `social/calendario.md` | The standing calendar: what is planned, drafted, approved and published. |
+| `social/strategy.md` | Objective, audience, channels, pillars, cadence, metrics. One page. |
+| `social/voice.md` | How the company sounds in posts, with real examples. |
+| `social/calendar.md` | The standing calendar: what is planned, drafted, approved and published. |
 
-Finished pieces for a period go in `entregas/YYYY-MM-DD-topic/`, as the protocol says.
+Finished pieces for a period go in `deliverables/YYYY-MM-DD-topic/`, as the protocol says.
 
 ## How to work
 
 Find where the request sits and start there. A request for one caption does not need a strategy session; it needs the voice file and the context.
 
-### 1. Strategy (when `social/estrategia.md` is missing or the user asks for one)
+### 1. Strategy (when `social/strategy.md` is missing or the user asks for one)
 
 1. **Objective first.** What should social media do for this business in the next 90 days: bring leads, build trust before a sale, keep current customers, recruit? One primary objective. It decides the content mix and the metric.
 2. **Audience and decision.** From the company context: who decides, what they already believe, and what would make them trust this company. Content answers their questions, not the company's wish to talk about itself.
@@ -40,13 +40,13 @@ Write the page, show it, and adjust before planning the calendar.
 
 ### 2. Voice (before writing any piece)
 
-Read `social/voz.md`, plus the tone section of `marca/<company>/identidade.md`. If there is no voice file, build it from real material: ask for five to ten posts or messages the user considers "sounds like us", read them, and record the patterns (sentence length, formality, words used and avoided, how they open, how they close) with two or three short examples. Confirm with the user. Do not guess a personality; a guessed voice produces the generic copy the user came here to avoid, and it is the main reason people reject AI-written posts.
+Read `social/voice.md`, plus the tone section of `brand/<company>/identity.md`. If there is no voice file, build it from real material: ask for five to ten posts or messages the user considers "sounds like us", read them, and record the patterns (sentence length, formality, words used and avoided, how they open, how they close) with two or three short examples. Confirm with the user. Do not guess a personality; a guessed voice produces the generic copy the user came here to avoid, and it is the main reason people reject AI-written posts.
 
-When the user corrects a draft's tone, record the correction in `social/voz.md` so it holds next time.
+When the user corrects a draft's tone, record the correction in `social/voice.md` so it holds next time.
 
 ### 3. Calendar
 
-Read `social/calendario.md` first. Extend it; never rebuild it. Report what is scheduled, what was published, and where the gaps are, then plan forward so the next two to four weeks always exist. Format, status values and the repurposing rules are in `references/calendar.md`.
+Read `social/calendar.md` first. Extend it; never rebuild it. Report what is scheduled, what was published, and where the gaps are, then plan forward so the next two to four weeks always exist. Format, status values and the repurposing rules are in `references/calendar.md`.
 
 Each row names the date, channel, format, pillar, the single idea of the piece and its source (a customer question, a catalog entry, a process, a result). A row with no source is a guess; go find one.
 
@@ -65,7 +65,7 @@ Videos that need animation or rendering go to `motion-video`. Paid distribution 
 
 ### 5. Review (monthly, or when the user brings numbers)
 
-Ask for the platform's own export or screenshots; do not estimate numbers. Compare pieces by pillar and format against the metric of the objective, not by likes. Decide three things: what to repeat, what to stop, and one experiment for next month with its success criterion written before it runs. Record the decisions at the top of `social/estrategia.md` with the date.
+Ask for the platform's own export or screenshots; do not estimate numbers. Compare pieces by pillar and format against the metric of the objective, not by likes. Decide three things: what to repeat, what to stop, and one experiment for next month with its success criterion written before it runs. Record the decisions at the top of `social/strategy.md` with the date.
 
 ## What changes quickly
 
