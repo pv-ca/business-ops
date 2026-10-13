@@ -2,6 +2,13 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.12.1 (2026-10-13)
+
+- The plugin manifest now carries homepage, repository, license and keywords, and a Codex manifest (`business-ops/.codex-plugin/plugin.json`) adds the display name, short description and example prompts Codex shows.
+- Added `scripts/validate.py`, run on every push, which checks skill frontmatter, relative paths, playbook numbering, manifests in sync, the changelog and the README tables.
+- Added `AGENTS.md` with the rules for changing the plugin.
+- Versions are tagged from this one on.
+
 ## 0.12.0 (2026-10-13)
 
 - `llm-council` now has seven members: a sixth advisor, the Hacker, and the Chairman as a separate member that holds no lens and decides from the brief, the opinions and any review.

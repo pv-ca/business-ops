@@ -1,10 +1,26 @@
 {
   "name": "business-ops",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "Business coaching plugin: sales, recurring revenue, customer success, research, marketing, brand and offer, video, operations, management and finance. Works from the saved context of each of the user's companies, separates fact from hypothesis and delivers in a coach format.",
   "author": {
-    "name": "Paulo Victor"
+    "name": "Paulo Victor",
+    "url": "https://github.com/pv-ca"
   },
+  "homepage": "https://github.com/pv-ca/business-ops",
+  "repository": "https://github.com/pv-ca/business-ops",
+  "license": "MIT",
+  "keywords": [
+    "business",
+    "sales",
+    "customer-success",
+    "marketing",
+    "social-media",
+    "finance",
+    "operations",
+    "strategy",
+    "coaching",
+    "agent-skills"
+  ],
   "userConfig": {
     "context_folder": {
       "type": "directory",

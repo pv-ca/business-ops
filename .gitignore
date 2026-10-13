@@ -5,3 +5,6 @@ __pycache__/
 .cc-writes
 .claude/
 private/
+
+# Local list of terms the validator must not find in the plugin
+scripts/forbidden-terms.txt

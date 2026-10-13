@@ -284,9 +284,12 @@ A estrutura do repositório:
 .claude-plugin/marketplace.json   catálogo de onde o plugin é instalado
 business-ops/                     o plugin
   .claude-plugin/plugin.json      manifesto e versão
+  .codex-plugin/plugin.json       o que o Codex mostra sobre o plugin
   skills/<nome>/SKILL.md          uma pasta por skill, com suas referências
   commands/                       atalhos do Claude Code
 docs/readme/                      este README em outros idiomas
+scripts/validate.py               conferências que rodam a cada push
+AGENTS.md                         regras para alterar o plugin
 CHANGELOG.md
 ```
 

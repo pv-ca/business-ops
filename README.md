@@ -284,9 +284,12 @@ Repository layout:
 .claude-plugin/marketplace.json   catalog the plugin is installed from
 business-ops/                     the plugin
   .claude-plugin/plugin.json      manifest and version
+  .codex-plugin/plugin.json       what Codex shows about the plugin
   skills/<name>/SKILL.md          one folder per skill, with its references
   commands/                       Claude Code shortcuts
 docs/readme/                      this README in other languages
+scripts/validate.py               checks run on every push
+AGENTS.md                         rules for changing the plugin
 CHANGELOG.md
 ```
 

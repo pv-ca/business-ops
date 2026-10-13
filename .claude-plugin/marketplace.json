@@ -1,14 +1,25 @@
 {
   "name": "pvca",
   "owner": {
-    "name": "Paulo Victor"
+    "name": "Paulo Victor",
+    "url": "https://github.com/pv-ca"
   },
   "description": "Plugins by Paulo Victor for Claude Code and Codex.",
   "plugins": [
     {
       "name": "business-ops",
       "source": "./business-ops",
-      "description": "Business coaching plugin that works from the saved context of each of the user's companies."
+      "description": "Business coaching plugin that works from the saved context of each of the user's companies.",
+      "homepage": "https://github.com/pv-ca/business-ops",
+      "license": "MIT",
+      "keywords": [
+        "business",
+        "sales",
+        "customer-success",
+        "marketing",
+        "social-media",
+        "finance"
+      ]
     }
   ]
 }
