@@ -42,7 +42,7 @@ Every skill triggers from the request itself and can also be called by name: `/b
 
 ## Keeping it portable
 
-Codex reads this folder as it is, through the same `.claude-plugin/` manifests, so there is no build step and no second copy. Three rules keep it that way:
+Codex reads this folder as it is, through the same `.claude-plugin/` manifests, so there is no build step and no second copy. These rules keep it that way:
 
 - Skills name files by paths relative to the skill's folder. `${CLAUDE_PLUGIN_ROOT}` is replaced only by Claude Code and may appear only in `commands/`.
 - `${user_config.context_folder}` is replaced only by Claude Code. A skill that shows it must also say what to do when it is not replaced; the lookup order is in section 1 of the coach protocol.
