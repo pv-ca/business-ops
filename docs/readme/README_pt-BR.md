@@ -27,7 +27,7 @@ O plugin reúne 22 skills para vendas, pós-venda, marketing, redes sociais, pro
 
 O material que vai para o seu cliente usa apenas o que você confirmou. Cada informação da empresa recebe um de cinco status (confirmada, representada, planejada, hipótese ou desconhecida), e planos e preços vêm de um catálogo que registra se cada um está disponível.
 
-> O plugin ainda é um rascunho em uso pelo autor, e este repositório é privado.
+> O plugin ainda é um rascunho em uso pelo autor.
 
 ## Início rápido
 
@@ -47,7 +47,7 @@ codex plugin marketplace add pv-ca/business-ops
 codex plugin add business-ops@pvca
 ```
 
-Abra uma sessão nova depois de instalar. Como o repositório é privado, a instalação exige acesso a ele.
+Abra uma sessão nova depois de instalar.
 
 ### Diga onde fica o contexto
 
@@ -300,7 +300,7 @@ CHANGELOG.md
 
 ## Contribuir
 
-O repositório é privado por enquanto. Quem tem acesso pode abrir uma [issue](https://github.com/pv-ca/business-ops/issues) contando o pedido que fez, o que a skill respondeu e o que esperava.
+Abra uma [issue](https://github.com/pv-ca/business-ops/issues) contando o pedido que fez, o que a skill respondeu e o que esperava.
 
 ## Licença
 

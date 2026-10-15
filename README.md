@@ -27,7 +27,7 @@ The plugin has 22 skills for sales, customer success, marketing, social media, p
 
 Anything written for your customers uses only what you have confirmed. Each fact about the company carries one of five statuses (confirmed, represented, planned, hypothesis or unknown), and plans and prices come from a catalog that records whether each one is available.
 
-> The plugin is a draft in use by its author, and this repository is private for now.
+> The plugin is a draft in use by its author.
 
 ## Quick start
 
@@ -47,7 +47,7 @@ codex plugin marketplace add pv-ca/business-ops
 codex plugin add business-ops@pvca
 ```
 
-Start a new session afterward. While the repository is private, installing requires access to it.
+Start a new session afterward.
 
 ### Say where the context lives
 
@@ -300,7 +300,7 @@ CHANGELOG.md
 
 ## Contributing
 
-The repository is private for now. If you have access, open an [issue](https://github.com/pv-ca/business-ops/issues) describing the request you made, what the skill answered and what you expected.
+Open an [issue](https://github.com/pv-ca/business-ops/issues) describing the request you made, what the skill answered and what you expected.
 
 ## License
 
