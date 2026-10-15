@@ -2,7 +2,11 @@
 
 **English** · [Português (Brasil)](docs/readme/README_pt-BR.md)
 
-# business-ops
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/branding/business-ops-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/branding/business-ops-light.png">
+  <img src="docs/branding/business-ops-light.png" alt="business-ops: connected coral and terracotta modules" width="320">
+</picture>
 
 ### A plugin for running your company's business work with Claude Code and Codex.
 
