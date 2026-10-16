@@ -3,7 +3,7 @@
 **English** · [Português (Brasil)](docs/readme/README_pt-BR.md)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/branding/business-ops-equilibrista-dark.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/branding/business-ops-equilibrista-textured-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="docs/branding/business-ops-equilibrista-light.png">
   <img src="docs/branding/business-ops-equilibrista-light.png" alt="business-ops: a clown balances a shop, coins and a telephone while holding a cup" width="340">
 </picture>
