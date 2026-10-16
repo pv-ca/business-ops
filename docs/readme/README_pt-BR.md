@@ -4,8 +4,8 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../branding/business-ops-equilibrista-textured-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-equilibrista-light.png">
-  <img src="../branding/business-ops-equilibrista-light.png" alt="business-ops: um palhaço equilibra uma loja, moedas e um telefone enquanto segura uma xícara" width="340">
+  <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-equilibrista-textured-light.png">
+  <img src="../branding/business-ops-equilibrista-textured-light.png" alt="business-ops: um palhaço equilibra uma loja, moedas e um telefone enquanto segura uma xícara" width="340">
 </picture>
 
 ### Um plugin para tocar o trabalho de negócios da sua empresa com Claude Code e Codex.
