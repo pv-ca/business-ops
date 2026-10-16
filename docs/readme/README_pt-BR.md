@@ -3,9 +3,9 @@
 [English](../../README.md) · **Português (Brasil)**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../branding/business-ops-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-light.png">
-  <img src="../branding/business-ops-light.png" alt="business-ops: módulos conectados em coral e terracota" width="320">
+  <source media="(prefers-color-scheme: dark)" srcset="../branding/business-ops-equilibrista-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-equilibrista-light.png">
+  <img src="../branding/business-ops-equilibrista-light.png" alt="business-ops: um palhaço equilibra uma loja, moedas e um telefone enquanto segura uma xícara" width="420">
 </picture>
 
 ### Um plugin para tocar o trabalho de negócios da sua empresa com Claude Code e Codex.
