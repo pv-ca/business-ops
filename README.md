@@ -8,7 +8,10 @@
 
 ### Methods and context for your company's work.
 
-Claude Code · Codex · [MIT](LICENSE) · Draft
+[![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#quick-start)
+[![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#quick-start)
+[![MIT](https://img.shields.io/badge/license-MIT-f4c430?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/status-draft-8a8a8a?style=flat-square)](CHANGELOG.md)
 
 **English** · [Português (Brasil)](docs/readme/README_pt-BR.md)
 
