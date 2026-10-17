@@ -1,37 +1,30 @@
 <div align="center">
 
-**English** · [Português (Brasil)](docs/readme/README_pt-BR.md)
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/branding/business-ops-equilibrista-textured-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="docs/branding/business-ops-equilibrista-textured-light.png">
   <img src="docs/branding/business-ops-equilibrista-textured-light.png" alt="business-ops: a clown balances a shop, coins and a telephone while holding a cup" width="340">
 </picture>
 
-### A plugin for running your company's business work with Claude Code and Codex.
+### Methods and context for your company's work.
 
-[![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#quick-start)
-[![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#quick-start)
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-5c4ee5?style=flat-square)](#what-you-can-do)
-[![Language](https://img.shields.io/badge/replies-in_your_language-009c3b?style=flat-square)](#faq)
-[![MIT license](https://img.shields.io/badge/license-MIT-f4c430?style=flat-square)](LICENSE)
-[![Status](https://img.shields.io/badge/status-draft-8a8a8a?style=flat-square)](CHANGELOG.md)
+Claude Code · Codex · [MIT](LICENSE) · Draft
 
-[Quick start](#quick-start) · [How it works](#how-it-works) · [What you can do](#what-you-can-do) · [Example requests](#example-requests) · [FAQ](#faq) · [Documentation](#documentation)
+**English** · [Português (Brasil)](docs/readme/README_pt-BR.md)
 
-<code>claude plugin marketplace add pv-ca/business-ops &amp;&amp; claude plugin install business-ops@pvca</code>
+[Quick start](#quick-start) · [What you can do](#what-you-can-do) · [Example requests](#example-requests) · [Documentation](#documentation)
 
 </div>
 
 ---
 
-Need to answer a lead, write a proposal, plan next month's content, or find out why customers cancel? Ask your agent. business-ops gives it the method for each area and the context of your company, and the answer arrives the way a coach would give it: what to do, why, the common mistake, and the next step.
+**business-ops** brings methods for sales, marketing, customer success, finance and management to Claude Code and Codex. It uses your company's context to help prepare replies, proposals, analyses and plans. It is a draft plugin in use by its author.
 
-The plugin has 22 skills for sales, customer success, marketing, social media, processes, finance and management. On first use it asks about you and what the company sells, and saves the answers as Markdown files in a folder on your computer. If you run more than one company, each gets its own folder, and the plugin does not carry a price, a customer or a practice from one to another.
+## A request to start with
 
-Anything written for your customers uses only what you have confirmed. Each fact about the company carries one of five statuses (confirmed, represented, planned, hypothesis or unknown), and plans and prices come from a catalog that records whether each one is available.
+> A lead asked for the price and went quiet after I answered. How do I pick the conversation back up?
 
-> The plugin is a draft in use by its author.
+The request activates the sales skill. On first use, the plugin helps organize your company's context.
 
 ## Quick start
 
@@ -97,6 +90,8 @@ In Codex, run `codex plugin add business-ops@pvca` again. Changes apply from a n
 
 ## How it works
 
+Customer-facing material uses confirmed information. The context records the status of each fact; plans and prices are held in a catalog with explicit availability.
+
 Your agent receives the request and picks the skill for that area. Before answering, the skill reads your profile and the files of the company in question, follows a protocol shared by every skill, and then applies the method.
 
 ```mermaid
@@ -113,6 +108,8 @@ The protocol settles four things. The first is what may be claimed: customer-fac
 When you mention something new, such as a launch or a price change, the skill records it in the right file with the date.
 
 ## What you can do
+
+The plugin includes 22 skills.
 
 | Area | What you get | Skill |
 | --- | --- | --- |

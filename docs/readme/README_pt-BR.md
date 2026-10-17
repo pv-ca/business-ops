@@ -1,37 +1,30 @@
 <div align="center">
 
-[English](../../README.md) · **Português (Brasil)**
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../branding/business-ops-equilibrista-textured-dark.png">
   <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-equilibrista-textured-light.png">
   <img src="../branding/business-ops-equilibrista-textured-light.png" alt="business-ops: um palhaço equilibra uma loja, moedas e um telefone enquanto segura uma xícara" width="340">
 </picture>
 
-### Um plugin para tocar o trabalho de negócios da sua empresa com Claude Code e Codex.
+### Método e contexto para o trabalho da sua empresa.
 
-[![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#início-rápido)
-[![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#início-rápido)
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-SKILL.md-5c4ee5?style=flat-square)](#o-que-dá-para-fazer)
-[![Idioma](https://img.shields.io/badge/respostas-no_seu_idioma-009c3b?style=flat-square)](#perguntas-frequentes)
-[![Licença MIT](https://img.shields.io/badge/licença-MIT-f4c430?style=flat-square)](../../LICENSE)
-[![Status](https://img.shields.io/badge/status-rascunho-8a8a8a?style=flat-square)](../../CHANGELOG.md)
+Claude Code · Codex · [MIT](../../LICENSE) · Rascunho
 
-[Início rápido](#início-rápido) · [Como funciona](#como-funciona) · [O que dá para fazer](#o-que-dá-para-fazer) · [Exemplos de pedidos](#exemplos-de-pedidos) · [Perguntas frequentes](#perguntas-frequentes) · [Documentação](#documentação)
+[English](../../README.md) · **Português (Brasil)**
 
-<code>claude plugin marketplace add pv-ca/business-ops &amp;&amp; claude plugin install business-ops@pvca</code>
+[Início rápido](#início-rápido) · [O que dá para fazer](#o-que-dá-para-fazer) · [Exemplos de pedidos](#exemplos-de-pedidos) · [Documentação](#documentação)
 
 </div>
 
 ---
 
-Precisa responder um lead, montar uma proposta, planejar o conteúdo do mês ou entender por que os clientes cancelam? Peça ao seu agente. O business-ops dá a ele o método de cada área e o contexto da sua empresa, e a resposta já vem no formato de quem ensina: o que fazer, por quê, o erro comum e o próximo passo.
+O **business-ops** reúne métodos para vendas, marketing, pós-venda, finanças e gestão no Claude Code e no Codex. Usa o contexto da sua empresa para ajudar a preparar respostas, propostas, análises e planos. É um plugin em rascunho, em uso pelo autor.
 
-O plugin reúne 22 skills para vendas, pós-venda, marketing, redes sociais, processos, finanças e gestão. No primeiro uso ele pergunta sobre você e sobre o que a empresa vende, e guarda as respostas em arquivos Markdown numa pasta do seu computador. Quem tem mais de uma empresa mantém uma pasta para cada, e o plugin não leva preço, cliente ou prática de uma para a outra.
+## Um pedido para começar
 
-O material que vai para o seu cliente usa apenas o que você confirmou. Cada informação da empresa recebe um de cinco status (confirmada, representada, planejada, hipótese ou desconhecida), e planos e preços vêm de um catálogo que registra se cada um está disponível.
+> Um lead perguntou o preço e sumiu depois que respondi. Como eu retomo essa conversa?
 
-> O plugin ainda é um rascunho em uso pelo autor.
+O pedido aciona a skill de vendas. No primeiro uso, o plugin ajuda a organizar o contexto da empresa.
 
 ## Início rápido
 
@@ -97,6 +90,8 @@ No Codex, rode de novo `codex plugin add business-ops@pvca`. As mudanças valem 
 
 ## Como funciona
 
+O material para clientes usa informações confirmadas. O contexto registra o estado de cada informação; planos e preços ficam em um catálogo com disponibilidade explícita.
+
 O agente recebe o seu pedido e escolhe a skill da área. Antes de responder, ela lê o perfil e os arquivos da empresa em questão, segue um protocolo comum a todas as skills e só então aplica o método.
 
 ```mermaid
@@ -113,6 +108,8 @@ O protocolo define quatro coisas. A primeira é o que pode ser afirmado: materia
 Quando você conta algo novo, como um lançamento ou uma mudança de preço, a skill registra no arquivo certo com a data.
 
 ## O que dá para fazer
+
+O plugin reúne 22 skills.
 
 | Área | O que você recebe | Skill |
 | --- | --- | --- |
@@ -276,6 +273,10 @@ Não. Em assuntos jurídicos, trabalhistas, tributários, de privacidade ou de s
 
 </details>
 
+## Contribuir
+
+Abra uma [issue](https://github.com/pv-ca/business-ops/issues) contando o pedido que fez, o que a skill respondeu e o que esperava.
+
 ## Documentação
 
 - [Notas técnicas do plugin](../../business-ops/README.md): estrutura, regras para manter as skills funcionando nos dois agentes e plugins que combinam. Em inglês.
@@ -301,10 +302,6 @@ tests/                            testes dos scripts das skills
 AGENTS.md                         regras para alterar o plugin
 CHANGELOG.md
 ```
-
-## Contribuir
-
-Abra uma [issue](https://github.com/pv-ca/business-ops/issues) contando o pedido que fez, o que a skill respondeu e o que esperava.
 
 ## Licença
 
