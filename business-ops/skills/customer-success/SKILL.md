@@ -7,7 +7,7 @@ description: "Use whenever the user asks for post-sale work: an onboarding or im
 
 ## Before you start
 
-Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
+Read and follow `../business-context/references/advisor-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
 The method lives in `references/customer-success-lifecycle-playbook.md`. Read only the part the task needs. `references/books.md` maps the books.
 
@@ -36,6 +36,15 @@ The company context says which column applies and carries the company-specific a
 6. **Read the health signals** the business can already observe (use, attendance, pending items, replies, payments). Build a score only when data predicts something.
 7. **For risk or a request to leave**, investigate the cause before offering anything: fit, expectation, activation, adoption, value, price, the customer's circumstances (sections 24, 31, 33). Not every cancellation should be reversed, and a discount does not repair missing value.
 8. **Expansion and referral** come after recognized value, never before (sections 28 and 29).
+
+## Trial and support by chat
+
+Early support is where activation is won or lost, and it usually happens in a chat app, not a ticket system.
+
+- **Never ask for a password**, and ask people not to send one, even to "check what they see". Credentials passed in a chat stay in the history. Use an invitation or reset link, a screen share, or a screenshot.
+- **Check in at fixed points of the trial** (for example day 2, day 7 and near the end), each asking about one concrete step toward first value, not "how is it going". Adjust the dates to the trial length.
+- **When a fix or a change the customer asked for ships, tell them.** Someone who reported a problem and heard nothing assumes it was ignored; the notice is also a natural reason to contact a quiet customer.
+- **Voice messages**: the agent often cannot hear them. Before drafting a reply, ask the user for a short summary of the audio, or reply only to what is written and say so.
 
 ## Typical deliverables
 

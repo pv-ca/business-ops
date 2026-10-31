@@ -7,7 +7,7 @@ description: "Use whenever the user shares an existing text or file (message, e-
 
 ## Before you start
 
-Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
+Read and follow `../business-context/references/advisor-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
 ## How to work
 
@@ -16,6 +16,7 @@ The material comes in the user's request, as a file path or pasted text; ask for
 1. Point out strengths, weaknesses and risks.
 2. Check the tone against `brand/<company>/identity.md`, and against `social/voice.md` for social media copy, when those files exist. Material that is correct and sounds like another company still needs rewriting.
 3. Rewrite the weak passages and explain each change by the principle behind it.
-4. Check every customer-facing claim against `context.md` and `catalog.md`, using the three questions of "The promise test" in `../brand-offer/SKILL.md`. Flag anything stated as fact that they mark as represented, planned, hypothesis or unknown, any plan or price that differs from the catalog or belongs to an entry that is not available, and anything that guarantees a result.
+4. Check every customer-facing claim against `context.md` and `catalog.md`, using the claim and promise test in section 3 of the protocol, including the premises the text leans on (a pain, an urgency, a consequence). Flag anything stated as fact that they mark as represented, planned, hypothesis or unknown, any plan or price that differs from the catalog or belongs to an entry that is not available, and anything that guarantees a result.
+5. For copy written for an audience (page, ad, post, campaign e-mail), look for framework-shaped copy (`../brand-offer/references/messaging.md`) and for a structure that ignores the reader's awareness stage. For a one-to-one message, check that it answers what the person asked before anything else (`sales`).
 
 To build a new proposal or deck instead of reviewing one, use the `proposals-presentations` skill.

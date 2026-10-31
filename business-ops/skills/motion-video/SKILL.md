@@ -7,7 +7,7 @@ description: "Use whenever the user wants a motion-graphics video planned and re
 
 ## Before you start
 
-Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company and what may be claimed. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
+Read and follow `../business-context/references/advisor-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company and what may be claimed. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
 A video is customer-facing material, so every sentence of narration and every on-screen claim passes the protocol's truth-status rule: confirmed facts only, no planned feature shown as available, no guaranteed result. For the message itself, apply "The promise test" in `../brand-offer/SKILL.md`.
 
@@ -44,11 +44,11 @@ The order matters: narration drives timing, and timing drives animation. Animati
 
 1. **Brief.** Objective, audience, where it will be shown, duration, aspect ratio. Defaults when the user gives none: 16:9, 1080p, 30 fps, 60 to 90 seconds for a site or a sales e-mail; 9:16 and under 60 seconds for social feeds.
 2. **Script.** Write the narration scene by scene. Open on the viewer's problem, not on the company. One idea per scene. Size each scene's text to the speaking rate of the narration language (roughly 140 to 160 words a minute for English or Portuguese; check for others). End on one next step.
-3. **Voice.** Generate the narration per scene and get word-level timestamps (from the TTS provider, or by transcribing the audio). Ask which voice provider the user has before generating; a paid voice usually sounds more natural than the local fallback, and the gap is larger outside English. With a recording of the user instead of AI voice, transcribe it with word timings and read a few frames to see what is on screen.
+3. **Voice.** Generate the narration per scene and get word-level timestamps (from the TTS provider, or by transcribing the audio). Ask which voice provider the user has before generating; a paid voice usually sounds more natural than the local fallback, and the gap is larger outside English. With a recording of the user instead of AI voice, transcribe it with word timings and read a few frames to see what is on screen. Have the user listen to the narration and approve it before the scene plan: from then on the voice is locked. If the script or voice changes after that, tell the user that every scene must be re-timed and the audio re-mixed before accepting the change.
 4. **Scene plan.** A table: scene, time range, narration, what appears on screen, on-screen text, motion, transition, assets needed. To show software working, choose per scene between recreating the interface as animation (cleaner, allows zoom and emphasis) and real screen recordings with highlights on top (faithful, needs footage from the user).
 5. **Approval gate.** Show the scene plan and wait for the user's approval or corrections. Do not write animation code before this. A weak idea is cheap to fix in a table and expensive to fix after rendering.
 6. **Build and render.** Hand the approved plan to the HyperFrames skill for the video type. Preview first, render when the preview is right.
-7. **Review and deliver.** Extract a contact sheet of frames and check it against the plan (text readable, nothing clipped, timing matches the voice). Mix voice and optional music, add captions when the destination plays muted. State the output path.
+7. **Review and deliver.** Extract a contact sheet of frames and check it against the plan (text readable, nothing clipped, timing matches the voice). Mix voice and optional music, add captions when the destination plays muted. Before delivering, check with `ffprobe` that the file lasts as long as the plan and carries an audio stream: a mix that ducks the music under the voice (FFmpeg `sidechaincompress`) ends where the voice ends unless the voice feeding the sidechain is padded with silence (`apad`). State the output path.
 
 ## Motion principles
 

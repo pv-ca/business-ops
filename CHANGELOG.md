@@ -2,6 +2,17 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.14.0 (2026-10-16)
+
+- The coach protocol is now the advisor protocol (`business-context/references/advisor-protocol.md`), and the manifests describe a business advisor plugin instead of a coaching plugin.
+- The advisor protocol now holds "Evidence before framework": copy, offer, hook, awareness and messaging frameworks organize evidence and never supply a pain, urgency or result; the order of confidence for evidence (moved here from the sales playbook, which now points to it); and the order of reasoning before writing copy.
+- The promise test moved from `brand-offer` to the protocol as the claim and promise test, with six questions that also cover the premises copy leans on, the certainty of the evidence, and urgency or fear that was not shown. `brand-offer`, `material-review`, `social-media` and `proposals-presentations` point to it.
+- `brand-offer`: the value equation is an offer diagnostic, not permission to amplify claims; StoryBrand is a clarity check, not a template; it now covers homepage, landing, product, offer and sales page and campaign e-mail copy, with `references/messaging.md` (awareness stage and its limits, signs of framework-shaped copy, page components as a menu).
+- `sales`: one-to-one messages follow the conversation (answer first, no request in every reply, no urgency the catalog does not record), RRR shapes a message after the diagnosis, and an objection is not treated as a wording problem.
+- `sales`: a first chat message from a lead follows pain, current volume or process, mirroring and a demo slot before any price; new "Demo and follow-up" section (sample material and decision maker at booking, day reminder, one reschedule after a no-show, same-day summary with a dated next step, at most three follow-up touches that each bring something new, the last one asking the reason for the loss).
+- `customer-success`: new "Trial and support by chat" section (never ask for a password, check-ins at fixed points of the trial, tell the customer when a requested fix ships, ask for a summary of voice messages).
+- `social-media`: hooks may compress attention but not distort the truth, with the hooks that are not written; the voice file records more patterns and real examples outrank adjectives. `market-research`: copy never steers research.
+
 ## 0.13.0 (2026-10-13)
 
 - The plugin now carries scripts where an exact result matters. They are Python with the standard library only, read their inputs and print a result, and write nothing; each skill says what to do when no command can be run. There are still no hooks and no MCP servers.
@@ -30,7 +41,7 @@ The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agen
 ## 0.10.0 (2026-10-13)
 
 - Every skill description now starts with its trigger wording and ends by naming the neighbouring skill for look-alike requests. This separates `marketing` from `social-media` and `ads`, `management-strategy` from `quarterly-plan`, `sales` from `proposals-presentations` and `market-research`, and `material-review` from `proposals-presentations`.
-- Coach protocol: an urgent request that already carries its facts is answered before the onboarding when no context is saved yet; company selection now lists `method-adaptation.md` and `brand/<company>/identity.md` among the files to read; a skill's own output structure replaces the four blocks.
+- Advisor protocol: an urgent request that already carries its facts is answered before the onboarding when no context is saved yet; company selection now lists `method-adaptation.md` and `brand/<company>/identity.md` among the files to read; a skill's own output structure replaces the four blocks.
 - Prices live only in `catalog.md`. `business-context` no longer asks for them in `context.md`, and `sales` quotes from available catalog entries.
 - Tone is read from `brand/<company>/identity.md`, with `social/voice.md` for social media. `sales`, `customer-success` and `material-review` point there.
 - New `business-context/references/context-formats.md`: the structure of the profile, context, catalog, changelog, brand identity and lead record, plus a ceiling and an `archive/` folder for the files that grow. History sections are newest first everywhere.

@@ -9,7 +9,7 @@
     {
       "name": "business-ops",
       "source": "./business-ops",
-      "description": "Business coaching plugin that works from the saved context of each of the user's companies.",
+      "description": "Business advisor plugin that works from the saved context of each of the user's companies.",
       "homepage": "https://github.com/pv-ca/business-ops",
       "license": "MIT",
       "keywords": [

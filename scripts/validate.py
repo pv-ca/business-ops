@@ -56,8 +56,8 @@ def check_skills():
             fail(path, "SKILL.md has more than 500 lines")
         if "${CLAUDE_PLUGIN_ROOT}" in text:
             fail(path, "${CLAUDE_PLUGIN_ROOT} may appear only in commands/")
-        if "coach-protocol.md" not in text:
-            fail(path, "does not point to the coach protocol")
+        if "advisor-protocol.md" not in text:
+            fail(path, "does not point to the advisor protocol")
     return names
 
 

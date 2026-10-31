@@ -5,4 +5,4 @@ argument-hint: "<process or document, or 'audit'> [company]"
 
 Use the `processes-docs` skill of this plugin. The process, document or request comes in `$ARGUMENTS`. With `audit` (or the same word in the user's language, or no argument), read the company's process library index and report what exists, what has no owner, what is past its review date and what is missing.
 
-Follow `${CLAUDE_PLUGIN_ROOT}/skills/business-context/references/coach-protocol.md` (how to find the context, pick the company, what may be claimed, shape and language of the answer).
+Follow `${CLAUDE_PLUGIN_ROOT}/skills/business-context/references/advisor-protocol.md` (how to find the context, pick the company, what may be claimed, shape and language of the answer).

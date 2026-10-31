@@ -1,6 +1,6 @@
 # Context formats
 
-Structure of the files the plugin keeps in the context folder. Other skills find facts by these section names, IDs and status words, so keep them as written here. Section names and keys stay in English; the content follows the language rule in section 7 of the coach protocol. A file may hold more than the sections below when the company needs it.
+Structure of the files the plugin keeps in the context folder. Other skills find facts by these section names, IDs and status words, so keep them as written here. Section names and keys stay in English; the content follows the language rule in section 7 of the advisor protocol. A file may hold more than the sections below when the company needs it.
 
 ## Contents
 
@@ -84,7 +84,7 @@ Older brands or products whose terms no longer apply.
 Newest first. What the user said, in one or two lines.
 ```
 
-Truth status values: `confirmed`, `represented`, `planned`, `hypothesis`, `unknown`. Their meaning is in section 3 of the coach protocol.
+Truth status values: `confirmed`, `represented`, `planned`, `hypothesis`, `unknown`. Their meaning is in section 3 of the advisor protocol.
 
 ## `<company>/catalog.md`
 
@@ -146,7 +146,7 @@ Files in `assets/`, which version goes on which background, minimum size and cle
 
 ## Voice
 
-How the company sounds in customer-facing material: three or four traits, each with one sentence that fits and one that does not. Words it uses and words it avoids.
+How the company sounds in customer-facing material: three or four traits, each with one sentence that fits and one that does not. Words it uses and words it avoids. Real sentences the company wrote, and the corrections the user makes to drafts, are added here as they come; they outrank the traits when the two disagree.
 ```
 
 This file is the source for tone in every customer-facing piece. `<company>/social/voice.md` adds what is specific to social media.

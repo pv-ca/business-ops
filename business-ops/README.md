@@ -6,7 +6,7 @@ Plugin for business work, for Claude Code and Codex from the same source. It str
 
 1. The `business-context` skill keeps a context folder: `business-ops-context.md` (profile and index of companies) plus, per company, `context.md` (stable facts), `catalog.md` (plans, prices and features with status), `changelog.md` (changelog), `templates/` (templates), `processes/` (process library), `social/` (social media strategy, voice and calendar), and a brand folder `brand/<company>/`. The structure of each file is in `skills/business-context/references/context-formats.md`. In Claude Code, set the folder with `claude plugin configure business-ops@pvca` (option `context_folder`). Codex has no plugin settings, so there, and wherever the option is unset, the folder comes from the project instructions, then from the path written in `~/.config/business-ops/context-folder`, then from the working directory.
 2. Every skill reads the context of the company in question before acting and keeps companies separate.
-3. Every answer follows the coach protocol in `skills/business-context/references/coach-protocol.md`: confirmed facts only in customer-facing material, diagnosis before prescription, and the four-block deliverable (what to do, why, common mistake, next step).
+3. Every answer follows the advisor protocol in `skills/business-context/references/advisor-protocol.md`: confirmed facts only in customer-facing material, diagnosis before prescription, and the four-block deliverable (what to do, why, common mistake, next step).
 
 The plugin holds no fact about any particular company. Everything specific to a business (context, catalog, brand, processes, how a method applies to it) lives in the user's context folder, so the plugin can be shared as it is.
 
@@ -16,7 +16,7 @@ Instruction files are in English. Replies follow the language the user writes in
 
 | Skill | Covers | Method source |
 | --- | --- | --- |
-| `business-context` | Onboarding and context upkeep | coach protocol |
+| `business-context` | Onboarding and context upkeep | advisor protocol |
 | `sales` | Leads, discovery, demo, proposal, objections, follow-up | commercial sales playbook |
 | `recurring-revenue` | Recurring-revenue system, metrics, roles, scale readiness, ABM | RevOps and scale playbook |
 | `customer-success` | Onboarding, activation, health, retention, churn, expansion | customer success lifecycle playbook |
@@ -32,7 +32,7 @@ Instruction files are in English. Replies follow the language the user writes in
 | `product-update` | Records a product, plan, price or feature change and lists what it affects | catalog and changelog |
 | `diagnosis`, `quarterly-plan` | Area diagnosis with 3 priorities; 90-day plan | the area's skill, `management-strategy` |
 | `llm-council` | Pressure-tests a costly decision: six advisors with opposed lenses, a review when they conflict on something material, one verdict from the Chairman | Karpathy's LLM Council method, prompt templates |
-| `teach`, `material-review` | Mini-lesson from the user's own company; critique and rewrite of a material | coach protocol |
+| `teach`, `material-review` | Mini-lesson from the user's own company; critique and rewrite of a material | advisor protocol |
 
 ## Calling it
 
@@ -45,7 +45,7 @@ Every skill triggers from the request itself and can also be called by name: `/b
 Codex reads this folder as it is, so there is no build step and no second copy. `.codex-plugin/plugin.json` only adds what Codex shows about the plugin (display name, short description, example prompts); its name, version and description must match `.claude-plugin/plugin.json`. These rules keep it that way:
 
 - Skills name files by paths relative to the skill's folder. `${CLAUDE_PLUGIN_ROOT}` is replaced only by Claude Code and may appear only in `commands/`.
-- `${user_config.context_folder}` is replaced only by Claude Code. A skill that shows it must also say what to do when it is not replaced; the lookup order is in section 1 of the coach protocol.
+- `${user_config.context_folder}` is replaced only by Claude Code. A skill that shows it must also say what to do when it is not replaced; the lookup order is in section 1 of the advisor protocol.
 - Frontmatter uses `name` and `description` only. The description starts with the trigger wording (`Use whenever...`), because Codex shortens long descriptions, and ends by naming the neighbouring skill for requests that look similar and belong elsewhere.
 - A skill refers to another skill by name when it hands a request over, and by relative path (`../<skill>/SKILL.md`) when it needs that skill's method read as part of its own work.
 

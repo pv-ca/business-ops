@@ -1,4 +1,4 @@
-# Coach protocol
+# Advisor protocol
 
 Every skill and command in this plugin follows this protocol. It exists because business advice is only useful when it is grounded in the user's real company, and only safe when it never states as fact something the company has not confirmed.
 
@@ -43,6 +43,35 @@ Each company keeps two kinds of fact, and both separate what is confirmed from w
 - Topics that change quickly (ad platforms, market prices, tools, algorithms, laws, taxes) need a web search before you state anything, with the source and its date. Books supply the method; the current state of the market comes from research.
 - For legal, labor, tax, privacy or security matters, explain the business consequence, separate fact from interpretation and say when a specialist is needed.
 
+### Evidence before framework
+
+Copy, persuasion, positioning, offer, hook, awareness and messaging frameworks organize evidence; they do not create it. Before applying one, establish what is supported by customer behavior, customer conversations, research, company and product facts and the current commercial situation. A framework that has a slot for a pain, a desire, an objection, an urgency, an anxiety, a result or a social consequence is not evidence that the customer has one. When the evidence is missing, mark the statement as a hypothesis or write copy that does not depend on it. Persuasion makes real reasons to act clearer and more motivating; it does not supply the reasons.
+
+Weigh evidence in this order of confidence:
+
+1. observed customer behavior;
+2. customer statements about specific events;
+3. verified internal data;
+4. patterns repeated across conversations, interviews, deals or usage;
+5. reliable external research;
+6. informed hypothesis;
+7. intuition.
+
+Demographics and firmographics help locate an audience; they do not say why it buys. A hypothesis can drive a test but is not written as fact. When real customer language exists in sufficient amount, prefer it to wording the company or the agent made up.
+
+### The claim and promise test
+
+Before an important statement goes into customer-facing material, ask of it, and of the premises the copy leans on (a pain, an urgency, a consequence), not only of product claims:
+
+1. Is it confirmed, or a hypothesis?
+2. Does the company deliver it today, for the typical customer, without depending on an exception?
+3. Is there proof to show if the customer asks?
+4. Does the sentence keep the certainty of the evidence? "Some customers reported less manual work" does not become "reduces manual work".
+5. Does it turn a correlation, a possibility or a wish into a promise?
+6. Does it create urgency, scarcity, fear or a consequence that was not shown?
+
+When a statement fails, lower its certainty, label it as a hypothesis, turn it into a question, make it conditional or cut it. Stronger wording never makes up for missing evidence. Guaranteed results, superlatives ("the best", "the fastest", "100% secure") and planned features do not pass. When the evidence is solid, use it plainly with its scope; burying a verified result under hedges is also a distortion. A defensible promise sells better over time because it does not turn into expectation debt after the sale.
+
 ## 4. Diagnose before prescribing
 
 1. Establish the objective, the constraint and the stage of the business (discovery, validation, first customers, emerging repeatability, scale).
@@ -52,6 +81,8 @@ Each company keeps two kinds of fact, and both separate what is confirmed from w
 5. Make one primary recommendation, with the first action and the criterion that shows whether it worked.
 
 Prefer a small reversible test to an elaborate plan when the test resolves the main uncertainty.
+
+For customer-facing copy, reason in this order: customer evidence, context, awareness or decision stage, the problem or the progress wanted, positioning, the offer and how it creates value, the persuasive mechanism that fits, format and channel, the copy, and last the claim and promise test. This is how to think, not a list of sections for the deliverable. Starting from a copy formula and filling its slots is how invented pains and promises get in. A one-to-one conversation follows the shorter order in the `sales` skill.
 
 ## 5. Questions
 
@@ -122,7 +153,7 @@ Reading sources, analyzing, calculating scenarios and creating local drafts need
 ## 12. Check before delivering
 
 - the right company context was used and nothing leaked from one company to another;
-- no fact, number or promise was invented, and every hypothesis is labelled as one;
+- no fact, number or promise was invented, no framework slot was filled with an unsupported pain, urgency or result, and every hypothesis is labelled as one;
 - the recommendation addresses the cause and respects the constraint;
 - the first action and the validation criterion are clear;
 - the answer is no more complex than it needs to be.

@@ -7,7 +7,7 @@ description: "Use whenever the user asks what to post, wants content ideas, a co
 
 ## Before you start
 
-Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
+Read and follow `../business-context/references/advisor-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look.
 
 A post is customer-facing material. Everything in it follows section 3 of the protocol: prices, plans and features come from catalog entries with status available, and nothing is promised that the context does not confirm.
 
@@ -40,7 +40,9 @@ Write the page, show it, and adjust before planning the calendar.
 
 ### 2. Voice (before writing any piece)
 
-Read `social/voice.md`, plus the tone section of `brand/<company>/identity.md`. If there is no voice file, build it from real material: ask for five to ten posts or messages the user considers "sounds like us", read them, and record the patterns (sentence length, formality, words used and avoided, how they open, how they close) with two or three short examples. Confirm with the user. Do not guess a personality; a guessed voice produces the generic copy the user came here to avoid, and it is the main reason people reject AI-written posts.
+Read `social/voice.md`, plus the tone section of `brand/<company>/identity.md`. If there is no voice file, build it from real material: ask for five to ten posts or messages the user considers "sounds like us", read them, and record the patterns with two or three short examples each: sentence length, formality, vocabulary and recurring expressions, words avoided, rhythm, how they open and close, energy, use of humor, how they ask for action, and how hard they sell. Confirm with the user. Do not guess a personality; a guessed voice produces the generic copy the user came here to avoid, and it is the main reason people reject AI-written posts.
+
+Real examples and the user's corrections outrank adjectives. "Human", "professional", "friendly" or "persuasive" say little about how to write a sentence; when an instruction like that conflicts with the examples, follow the examples. Voice is how the company sounds, not a copy formula: it does not decide the structure of a piece.
 
 When the user corrects a draft's tone, record the correction in `social/voice.md` so it holds next time.
 
@@ -88,6 +90,6 @@ Algorithms, character and duration limits, best posting times, hashtag conventio
 
 ## With other skills
 
-`marketing` decides whether social media is the right channel at all and how it fits the funnel. `brand-offer` owns positioning and the promise test. `market-research` supplies the customer questions that become content. `creators-partners` covers creators and partners, `ads` paid media, `motion-video` produced video. When the `marketing-skills` plugin is installed, its `social` and `content-strategy` skills carry more platform detail; use them for execution depth while keeping this skill's files, voice and truth-status rule.
+`marketing` decides whether social media is the right channel at all and how it fits the funnel. `brand-offer` owns positioning, offer and page copy; the claim and promise test is in the protocol. `market-research` supplies the customer questions that become content. `creators-partners` covers creators and partners, `ads` paid media, `motion-video` produced video. When the `marketing-skills` plugin is installed, its `social` and `content-strategy` skills carry more platform detail; use them for execution depth while keeping this skill's files, voice and truth-status rule.
 
 `references/books.md` maps the method to its books.

@@ -5,4 +5,4 @@ argument-hint: "<customer and what you know about them> [company]"
 
 Use the `proposals-presentations` skill of this plugin to produce a proposal. Customer details, notes or a path to meeting notes come in `$ARGUMENTS`; ask for the missing inputs the template lists.
 
-Follow `${CLAUDE_PLUGIN_ROOT}/skills/business-context/references/coach-protocol.md` (how to find the context, pick the company, what may be claimed, shape and language of the answer).
+Follow `${CLAUDE_PLUGIN_ROOT}/skills/business-context/references/advisor-protocol.md` (how to find the context, pick the company, what may be claimed, shape and language of the answer).

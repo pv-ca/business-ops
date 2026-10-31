@@ -122,17 +122,9 @@ Before prescribing more leads, more calls, lower prices, or a new script, locate
 
 ## 5. Evidence hierarchy in commercial work
 
-Use, in descending order:
+The order of confidence for evidence, from observed customer behavior down to intuition, is shared by every skill and lives in "Evidence before framework", section 3 of `../business-context/references/advisor-protocol.md` (relative to the skill folder).
 
-1. observed customer behavior;
-2. direct customer statements about specific events;
-3. verified internal data;
-4. repeated patterns across interviews and deals;
-5. external evidence;
-6. informed hypothesis;
-7. intuition.
-
-Demographics and firmographics may help locate customers. They do not, by themselves, explain why a customer buys.
+In commercial work it decides what a diagnosis may rest on: a reason for change the customer described from a real event outranks one inferred from their role, segment or company size, and a thesis built from hypotheses is tested in the conversation before it is presented.
 
 ---
 
@@ -828,7 +820,7 @@ Do not respond enthusiastically to negative customer experiences in a way that s
 
 ## 36. RRR written communication
 
-Use RRR as a compact structure for relevant outreach.
+Use RRR as a compact structure for relevant outreach. It shapes a message once the situation is understood; it does not replace the diagnosis. Relevance that cannot be stated from what is known about the person is a sign to learn more first, not to write a more persuasive message.
 
 ### Relevance
 

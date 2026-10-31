@@ -5,6 +5,6 @@ This plugin carries insights drawn from these books, written in its own words; i
 | Book | Use it for |
 | --- | --- |
 | Obviously Awesome (April Dunford) | positioning against real alternatives |
-| $100M Offers (Alex Hormozi) | the value equation |
-| Building a StoryBrand (Donald Miller) | a clear message with the customer as protagonist |
+| $100M Offers (Alex Hormozi) | the value equation, to diagnose and improve the offer |
+| Building a StoryBrand (Donald Miller) | a clarity check: the customer as protagonist, the company as guide |
 | On Competition (Michael Porter) | differentiation |

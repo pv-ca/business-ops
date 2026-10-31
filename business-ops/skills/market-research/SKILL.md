@@ -7,11 +7,13 @@ description: "Use whenever the user wants neutral customer or market research: i
 
 ## Before you start
 
-Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look. The method lives in `references/customer-research-playbook.md` (interview guides in Part I, analysis in Part II). Read only the part the task needs. `references/books.md` lists the books.
+Read and follow `../business-context/references/advisor-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look. The method lives in `references/customer-research-playbook.md` (interview guides in Part I, analysis in Part II). Read only the part the task needs. `references/books.md` lists the books.
 
 ## Research is not selling
 
-Research seeks reliable learning; a sales conversation seeks a decision. Mixing them ruins both: the participant stops being candid and the evidence becomes worthless. In a research interview do not pitch, defend, challenge or negotiate. If the user wants to diagnose a live opportunity, that is the `sales` skill.
+Research seeks reliable learning; a sales conversation seeks a decision. Mixing them ruins both: the participant stops being candid and the evidence becomes worthless. In a research interview do not pitch, defend, challenge or negotiate, create urgency, or show benefits to win agreement. If the user wants to diagnose a live opportunity, that is the `sales` skill.
+
+Research feeds copy, never the other way round. A message or a positioning to be tested is a hypothesis to learn about through the participant's past behavior, not a statement to read out for their agreement, and the findings report what was heard, not the quotes that suit a planned campaign.
 
 ## How to work
 

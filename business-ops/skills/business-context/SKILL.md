@@ -5,7 +5,7 @@ description: "Use on first use of the plugin, when `business-ops-context.md` is 
 
 # Business context
 
-Every other skill in this plugin reads this context before acting, so its quality sets the ceiling for everything else. The protocol all skills follow is `references/coach-protocol.md` in this skill's folder; read it before the first onboarding.
+Every other skill in this plugin reads this context before acting, so its quality sets the ceiling for everything else. The protocol all skills follow is `references/advisor-protocol.md` in this skill's folder; read it before the first onboarding.
 
 When another skill sent the user here in the middle of an urgent request, that request comes first (section 1 of the protocol). Run the onboarding after it is answered.
 

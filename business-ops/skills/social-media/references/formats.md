@@ -20,18 +20,27 @@ Write the idea as one sentence before writing the piece: "A fixed weekly slot he
 
 ## Hooks
 
-The opening decides whether the rest is seen. Write three to five options per piece and pick with the user. Useful angles:
+The opening decides whether the rest is seen. A hook may compress attention, but it may not distort the underlying truth. Write three to five options per piece and pick with the user. Useful angles:
 
 | Angle | Shape | When it fits |
 | --- | --- | --- |
 | Question the audience already asks | Their own words, as they would type them | Answering pre-purchase doubts |
-| Specific result | A concrete outcome and how long it took | When there is a real, authorized case |
-| Common mistake | What most people do and what it costs | Teaching content |
+| Specific result | A concrete outcome and how long it took | Only when there is a real, authorized case and the numbers are that case's own |
+| Common mistake | A mistake you have actually seen and what it costs | Teaching content |
 | Scene | A moment the reader recognizes from their own week | Building identification |
-| Counter-intuitive claim | A belief of the field, challenged, with the reason | Point-of-view content, sparingly |
+| Counter-intuitive claim | A belief of the field, challenged, with a reason you can defend | Point-of-view content, sparingly |
 | Promise of the piece | What they will be able to do after reading | How-to and lists |
 
-A hook that the piece does not pay off is bait: it wins the click and loses the follower.
+A hook that the piece does not pay off is bait: it wins the click and loses the follower. With no data or cases, the question, scene, mistake and promise angles still work; they need only what the company has seen.
+
+Do not write hooks that depend on:
+
+- a statistic nobody measured, or a number borrowed from another context;
+- "everybody does this" or "most companies" without evidence;
+- a controversy staged for attention;
+- fear inflated beyond the real risk (a real legal or financial risk, stated calmly, is fine);
+- a confession or personal experience that did not happen;
+- scarcity or urgency the company has not confirmed.
 
 ## Text post
 
@@ -108,6 +117,9 @@ Readers recognize these and scroll past. The examples are in English, but each p
 - Invented vulnerability: a dramatic personal confession with no real story behind it.
 - Inflated words: revolutionize, transform, unlock, empower, journey, "in today's world".
 - Dashes used as dramatic pauses.
+- "Imagine if..." with no real scene behind it.
+
+These are sentence-level tells. Signs at the level of the whole piece (a dramatized problem, stacked benefits, a call to action everywhere, copy that fits any company) are under "Framework-shaped copy" in `../brand-offer/references/messaging.md`.
 
 When the `humanizer` skill is available, run the draft through it. Without it, reread the draft against the list above before delivering.
 

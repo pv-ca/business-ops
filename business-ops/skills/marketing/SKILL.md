@@ -7,13 +7,13 @@ description: "Use whenever the user asks how to get more leads or customers, whi
 
 ## Before you start
 
-Read and follow `../business-context/references/coach-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look. `references/books.md` lists the frameworks.
+Read and follow `../business-context/references/advisor-protocol.md` (a path relative to this skill's folder). It explains how to find the context, pick the company, what may be claimed and how to shape the answer. Context folder configured in the plugin: `${user_config.context_folder}`. When that shows no real path (it is empty, or the placeholder appears unreplaced because this agent has no plugin settings), the protocol says where to look. `references/books.md` lists the frameworks.
 
 ## How to work
 
 1. **Audience, promise and positioning come before channel.** Read them from the company context; if positioning is weak or unconfirmed, fix that first with `brand-offer`. A channel amplifies the message it is given.
 2. **Find where demand already is.** How current customers found the company, what they were doing before, what they searched or asked. If the context does not say, that is the first thing to learn (`market-research`).
-3. **Match the message to awareness** (Schwartz): someone who does not yet see the problem needs a different message from someone comparing options.
+3. **Match the message to awareness** (Schwartz): someone who does not yet see the problem needs a different message from someone comparing options. The stage decides how much to explain and what to open with; it is read from evidence and says nothing about how much the reader wants or needs. How to use it, and how to build pages and campaign e-mails, is in `../brand-offer/references/messaging.md`.
 4. **Pick one or two main channels** and justify them by audience fit, the company's capacity to sustain them and cost. A small team that spreads across five channels does none well.
 5. **Plan by funnel stage**, with one metric per stage and a calendar the team can actually keep.
 6. **Run experiments** (Ellis and Brown): hypothesis, test, minimum sample or period, decision criterion written before the test.

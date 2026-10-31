@@ -5,11 +5,11 @@ Instructions for an agent or a person changing this repository. The plugin is in
 ## Rules
 
 - **Nothing from a particular business.** The plugin is used by anyone, so it holds no company, product, customer or person name, no price and no local path. Examples use a placeholder company. What is specific to a business belongs in that user's context folder.
-- **English instructions, any reply language.** Skill, reference and command files are written in English, including examples and section names. The language of the reply is set by section 7 of the coach protocol, never by the language of these files.
+- **English instructions, any reply language.** Skill, reference and command files are written in English, including examples and section names. The language of the reply is set by section 7 of the advisor protocol, never by the language of these files.
 - **Markdown first, scripts only where exactness matters.** The plugin has no hooks and no MCP servers, because Codex and Claude Code do not share them and nothing here should run without the agent choosing to. A skill may carry a script in `skills/<name>/scripts/` for a step that must give the same result every time (arithmetic, checking a file's structure). Such a script is Python with the standard library only, reads its inputs and prints its result without writing to the user's files or using the network, and holds no formula or rule that is not also written in the skill or its references, so the skill still works where no command can be run. The skill names the script and says what to do without it. Each script has tests in `tests/`. `scripts/` and `tests/` at the repository root are maintenance tools and are not part of the installed plugin.
 - **Own words.** The plugin carries methods and insights, never the text of a book. Name the source and do not copy passages.
 - **One source for both agents.** Claude Code and Codex install the same folder. Keep the portability rules in `business-ops/README.md`: paths relative to the skill folder, `${CLAUDE_PLUGIN_ROOT}` only in `commands/`, `name` and `description` only in frontmatter, description starting with the trigger wording.
-- **The coach protocol is shared.** A rule that applies to every skill goes in `business-ops/skills/business-context/references/coach-protocol.md`, not in each skill.
+- **The advisor protocol is shared.** A rule that applies to every skill goes in `business-ops/skills/business-context/references/advisor-protocol.md`, not in each skill.
 
 ## Changing a skill
 

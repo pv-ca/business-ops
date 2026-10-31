@@ -279,7 +279,7 @@ No. On legal, labor, tax, privacy or security matters the plugin explains the co
 ## Documentation
 
 - [Plugin technical notes](business-ops/README.md): structure, the rules that keep the skills working in both agents, and companion plugins.
-- [Shared protocol](business-ops/skills/business-context/references/coach-protocol.md): how skills find the context, what may be claimed and the shape of the deliverable.
+- [Shared protocol](business-ops/skills/business-context/references/advisor-protocol.md): how skills find the context, what may be claimed and the shape of the deliverable.
 - [Context formats](business-ops/skills/business-context/references/context-formats.md): the structure of each file in the context folder and of a lead record.
 - [Context skill](business-ops/skills/business-context/SKILL.md): the onboarding conversation and what each company file holds.
 - [Changelog](CHANGELOG.md).

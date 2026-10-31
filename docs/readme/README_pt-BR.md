@@ -283,7 +283,7 @@ Abra uma [issue](https://github.com/pv-ca/business-ops/issues) contando o pedido
 ## Documentação
 
 - [Notas técnicas do plugin](../../business-ops/README.md): estrutura, regras para manter as skills funcionando nos dois agentes e plugins que combinam. Em inglês.
-- [Protocolo comum](../../business-ops/skills/business-context/references/coach-protocol.md): como as skills encontram o contexto, o que pode ser afirmado e o formato da entrega.
+- [Protocolo comum](../../business-ops/skills/business-context/references/advisor-protocol.md): como as skills encontram o contexto, o que pode ser afirmado e o formato da entrega.
 - [Formatos de contexto](../../business-ops/skills/business-context/references/context-formats.md): a estrutura de cada arquivo da pasta de contexto e do registro de um lead.
 - [Skill de contexto](../../business-ops/skills/business-context/SKILL.md): a conversa de entrada e o que cada arquivo de empresa guarda.
 - [Histórico de versões](../../CHANGELOG.md).
