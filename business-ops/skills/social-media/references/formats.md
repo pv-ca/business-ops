@@ -65,7 +65,9 @@ A carousel is a small argument, one step per slide. Decide the architecture befo
 
 Rules for every architecture:
 
-- The cover is the hook; it must work without the caption.
+- The cover is the hook; it must work without the caption. Every cover carries one, never a plain topic label: a label ("5 words that fool beginners") informs, a hook makes the reader recognize themselves and stop scrolling. The strongest form names the reader's exact mistake or belief as a question ("Do you say *actually* thinking it means 'currently'?"), and the swipe line promises the rest ("+4 more words →").
+- The cover is the only slide that competes in the feed, so it gets the visual weight: one giant keyword in a contrasting style, one brand graphic element (icon, tile, shape; a face only if the company shows people), one accent marking the trap. Inner slides stay plain, because whoever swiped already wants the content.
+- Inner slides of a list share one grid: the key element sits at the same height on every slide, so swiping feels steady. Keep text at full contrast (no faded grey for secondary lines) and mark wrong versus right with a word label as well as color (a "NOT" tag beside the wrong meaning), so the meaning survives without color.
 - One idea and few words per slide, large enough to read on a phone.
 - Each slide gives a reason to swipe to the next.
 - The last slide carries the single call to action.

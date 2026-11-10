@@ -2,6 +2,10 @@
 
 The version number lives in `business-ops/.claude-plugin/plugin.json`. Each agent keeps one cached copy of the plugin per version, so every change to the skills raises the number.
 
+## 0.15.0 (2026-11-10)
+
+- social-media: every carousel cover carries a hook naming the reader's mistake or belief as a question, never a topic label; the cover takes the visual weight and inner list slides share one grid with full-contrast text and labeled wrong/right.
+
 ## 0.14.0 (2026-10-16)
 
 - The coach protocol is now the advisor protocol (`business-context/references/advisor-protocol.md`), and the manifests describe a business advisor plugin instead of a coaching plugin.
