@@ -1,12 +1,10 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../branding/business-ops-equilibrista-textured-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-equilibrista-textured-light.png">
-  <img src="../branding/business-ops-equilibrista-textured-light.png" alt="business-ops: um palhaço equilibra uma loja, moedas e um telefone enquanto segura uma xícara" width="340">
+  <source media="(prefers-color-scheme: dark)" srcset="../branding/business-ops-banner-pt-BR-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="../branding/business-ops-banner-pt-BR-light.png">
+  <img src="../branding/business-ops-banner-pt-BR-light.png" alt="business-ops: cena em pixel art de 32 bits de um palhaço equilibrando uma loja, moedas e um telefone, com o nome e a frase “Método e contexto para o trabalho da sua empresa.”" width="100%">
 </picture>
-
-### Método e contexto para o trabalho da sua empresa.
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#início-rápido)
 [![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#início-rápido)

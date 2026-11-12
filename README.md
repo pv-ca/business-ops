@@ -1,12 +1,10 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/branding/business-ops-equilibrista-textured-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="docs/branding/business-ops-equilibrista-textured-light.png">
-  <img src="docs/branding/business-ops-equilibrista-textured-light.png" alt="business-ops: a clown balances a shop, coins and a telephone while holding a cup" width="340">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/branding/business-ops-banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/branding/business-ops-banner-light.png">
+  <img src="docs/branding/business-ops-banner-light.png" alt="business-ops: pixel-art 32-bit scene of a clown balancing a shop, coins and a telephone, with the name and the line “Methods and context for your company's work.”" width="100%">
 </picture>
-
-### Methods and context for your company's work.
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-d97757?style=flat-square)](#quick-start)
 [![Codex](https://img.shields.io/badge/Codex-plugin-10a37f?style=flat-square)](#quick-start)
